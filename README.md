@@ -8,6 +8,8 @@ GitHub Pages serves this static site from **`main` → `/ (root)`**. Commits to 
 
 ## Browse with your students
 
+The page opens directly on the archive: compact filters and text entries, with no introductory header or decorative project banners.
+
 - Switch between **German and English** explanations.
 - Search by title, creator, environment or the idea you want to explore.
 - Use the collection tabs to browse **Max projects**, **related environments**, or **resource hubs**.
