@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Neue Projekte und Ressourcen für Max Examples vorbereiten und als vollständige Katalogdatei exportieren.">
+  <meta name="theme-color" content="#173f35">
+  <title>Eintrag ergänzen — Max Examples</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/editor.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#entry-form">Zum Formular</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="./" aria-label="Max Examples — Startseite"><span class="patch-logo" aria-hidden="true">m<span>↗</span></span><span>max<span class="wordmark-light">examples</span><span class="wordmark-caption">Ein offenes Ideenarchiv</span></span></a>
+    <nav aria-label="Hauptnavigation"><a class="outline-button" href="./">← Zum Archiv</a></nav>
+  </header>
+  <main>
+    <section class="editor-intro wrap" aria-labelledby="editor-title">
+      <p class="eyebrow">DAS ARCHIV DARF WACHSEN</p>
+      <h1 id="editor-title">Eine Referenz ergänzen.</h1>
+      <p>Beschreibe ein Projekt, verlinke das Original und ergänze einen kleinen Impuls zum Ausprobieren. Du kannst mehrere Einträge sammeln und gemeinsam als Katalogdaten und lesbare Textfassung exportieren.</p>
+      <div class="editor-notice"><strong>Lokale Vorbereitung:</strong> Dieses Formular veröffentlicht nichts. Deine Ergänzungen bleiben in diesem Tab. Speichere anschließend beide vollständigen Dateien im Repository: <code>data/projects.json</code> für die Website und <code>CATALOGUE.md</code> für die Textfassung. Dafür brauchst du nur den Browser.</div>
+    </section>
+
+    <div class="editor-layout wrap">
+      <form class="editor-form" id="entry-form">
+        <p class="field-help">Felder mit * sind erforderlich. Englisch ist optional; fehlende englische Texte übernehmen ausdrücklich den jeweiligen deutschen Text.</p>
+        <fieldset>
+          <legend>1 · Das Projekt</legend>
+          <label for="entry-title">Titel *</label>
+          <input id="entry-title" name="title" required maxlength="180" placeholder="Zum Beispiel: Mein Bewegungsinstrument" autocomplete="off">
+          <label for="entry-id">Eindeutige Kennung *</label>
+          <input id="entry-id" name="id" required pattern="[a-z0-9]+(-[a-z0-9]+)*" maxlength="90" placeholder="mein-bewegungsinstrument" aria-describedby="id-help" autocomplete="off" spellcheck="false">
+          <p class="field-help" id="id-help">Kleine Buchstaben a–z, Zahlen und einzelne Bindestriche. Wird zunächst aus dem Titel vorgeschlagen und darf im Archiv nur einmal vorkommen.</p>
+          <label for="entry-creator">Urheber:in / Team *</label>
+          <input id="entry-creator" name="creator" required maxlength="240" placeholder="Name der Person oder des Projekts">
+          <div class="field-pair">
+            <div><label for="entry-category">Thema *</label><select id="entry-category" name="category" required><option value="sound">Klang &amp; Instrumente</option><option value="generative">Generative Musik</option><option value="visual">Visuals &amp; Video</option><option value="interaction">Bewegung &amp; Interaktion</option><option value="spatial">Klang im Raum</option><option value="performance">Performance &amp; Bühne</option></select></div>
+            <div><label for="entry-kind">Art des Eintrags *</label><select id="entry-kind" name="kind" required><option value="project">Konkretes Projekt</option><option value="tool">Werkzeug / Toolkit</option><option value="resource">Sammlung / Lernressource</option></select></div>
+          </div>
+          <div class="field-pair">
+            <div><label for="entry-level">Einstieg *</label><select id="entry-level" name="level" required><option value="beginner">Leichter Einstieg</option><option value="intermediate">Mit Vorkenntnissen</option><option value="advanced">Vertiefung</option><option value="inspiration">Zum Inspirieren</option></select></div>
+            <div><label for="entry-verified">Quellen zuletzt geprüft *</label><input id="entry-verified" name="verified" type="date" required aria-describedby="verified-help"></div>
+          </div>
+          <p class="field-help" id="verified-help">Datum, an dem du Beschreibung, Links und Voraussetzungen kontrolliert hast. Es bedeutet nicht automatisch, dass der Patch technisch getestet wurde.</p>
+          <label for="entry-environment">Umgebungen / benötigte Werkzeuge *</label>
+          <input id="entry-environment" name="environment" required value="Max" placeholder="Max, Jitter" aria-describedby="environment-help">
+          <p class="field-help" id="environment-help">Mit Kommas trennen. Für Live-Geräte etwa „Max for Live, Ableton Live“. Für verwandte Werkzeuge deren tatsächliche Namen angeben.</p>
+          <label for="entry-tags">Zusätzliche Suchbegriffe</label>
+          <input id="entry-tags" name="tags" placeholder="MIDI, Stimme, Granularsynthese" aria-describedby="tags-help">
+          <p class="field-help" id="tags-help">Optional, mit Kommas trennen.</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>2 · Was macht es interessant?</legend>
+          <label for="entry-summary-de">Kurzbeschreibung · Deutsch *</label>
+          <textarea id="entry-summary-de" name="summary_de" required maxlength="1500" placeholder="Was kann man hier sehen, hören oder ausprobieren?"></textarea>
+          <label for="entry-summary-en">Kurzbeschreibung · Englisch (optional)</label>
+          <textarea id="entry-summary-en" name="summary_en" maxlength="1500" placeholder="Leer lassen, um den deutschen Text zu übernehmen."></textarea>
+          <label for="entry-idea-de">Eigener Projektimpuls · Deutsch *</label>
+          <textarea id="entry-idea-de" name="idea_de" required maxlength="1500" placeholder="Welche kleine eigene Idee könnten Studierende daraus entwickeln?"></textarea>
+          <label for="entry-idea-en">Eigener Projektimpuls · Englisch (optional)</label>
+          <textarea id="entry-idea-en" name="idea_en" maxlength="1500" placeholder="Leer lassen, um den deutschen Text zu übernehmen."></textarea>
+          <label for="entry-access-de">Zugang &amp; Voraussetzungen · Deutsch *</label>
+          <textarea id="entry-access-de" name="access_de" required maxlength="1500" placeholder="Ist ein Patch verfügbar? Welche Software, Pakete oder Hardware braucht man? Kostenpflichtig oder nur zur Inspiration?"></textarea>
+          <label for="entry-access-en">Zugang &amp; Voraussetzungen · Englisch (optional)</label>
+          <textarea id="entry-access-en" name="access_en" maxlength="1500" placeholder="Leer lassen, um den deutschen Text zu übernehmen."></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>3 · Originale und Materialien verlinken</legend>
+          <p class="field-help">Vollständige http://- oder https://-Adressen verwenden. Bei einer Seite mit eingebettetem Video die Beschriftung etwa „Projekt + Video“ wählen. Ein Link zur Projektbeschreibung ist kein Patchdownload.</p>
+          <div class="link-fields">
+            <label for="project-url">Original-Projektseite / Hauptquelle *</label>
+            <input id="project-url" name="project_url" type="url" required placeholder="https://…">
+            <label for="project-label">Beschriftung des Projektlinks *</label>
+            <input id="project-label" name="project_label" required value="Projektseite" maxlength="90">
+          </div>
+          <div class="link-fields">
+            <label for="video-url">Video oder Seite mit Video (optional)</label>
+            <input id="video-url" name="video_url" type="url" placeholder="https://…">
+            <label for="video-label">Beschriftung des Videolinks</label>
+            <input id="video-label" name="video_label" value="Video / Demo" maxlength="90">
+          </div>
+          <div class="link-fields">
+            <label for="patch-url">Patch / Materialdownload (optional)</label>
+            <input id="patch-url" name="patch_url" type="url" placeholder="https://…">
+            <label for="patch-label">Beschriftung des Downloadlinks</label>
+            <input id="patch-label" name="patch_label" value="Patch / Download" maxlength="90">
+          </div>
+          <div class="link-fields">
+            <label for="docs-url">Dokumentation / Anleitung (optional)</label>
+            <input id="docs-url" name="docs_url" type="url" placeholder="https://…">
+            <label for="docs-label">Beschriftung des Dokumentationslinks</label>
+            <input id="docs-label" name="docs_label" value="Dokumentation" maxlength="90">
+          </div>
+          <label for="entry-sources">Weitere Quellen für die Beschreibung (optional)</label>
+          <textarea id="entry-sources" name="sources" placeholder="https://…&#10;https://…" aria-describedby="sources-help"></textarea>
+          <p class="field-help" id="sources-help">Eine URL pro Zeile. Die Hauptquelle wird automatisch aufgenommen. Verlinke möglichst die Urheber:innen, offizielle Dokumentation oder das Original-Repository.</p>
+        </fieldset>
+
+        <div class="editor-actions"><button id="preview-entry" class="outline-button" type="submit" disabled>Eintrag prüfen &amp; Vorschau erstellen</button><button id="new-entry" class="outline-button" type="button">Formular für neuen Eintrag leeren</button></div>
+        <p class="field-help">„Formular leeren“ behält alle bereits vorgemerkten Einträge.</p>
+        <p id="form-status" class="editor-status" role="status" aria-live="polite"></p>
+        <button id="stage-entry" class="solid-button" type="button" disabled>Eintrag zum Arbeitskatalog hinzufügen</button>
+      </form>
+
+      <aside class="editor-output" aria-labelledby="output-title">
+        <h2 id="output-title">Vorschau &amp; Export</h2>
+        <p id="load-status" class="editor-status" role="status" aria-live="polite">Der aktuelle Katalog wird geladen …</p>
+        <button id="reload-catalogue" class="outline-button" type="button" hidden>Erneut laden</button>
+        <label for="entry-preview" class="field-help">Vorschau des einzelnen Eintrags</label>
+        <textarea id="entry-preview" readonly spellcheck="false" placeholder="Fülle das Formular aus und prüfe den Eintrag."></textarea>
+        <p id="fallback-note" hidden></p>
+        <p><strong id="working-count">Noch kein Arbeitskatalog geladen.</strong></p>
+        <p id="staged-empty">Noch keine neuen Einträge vorgemerkt.</p>
+        <ul id="staged-list" aria-label="Neu vorgemerkte Einträge"></ul>
+        <h3>Datei 1 · Katalogdaten</h3>
+        <div class="editor-actions"><button id="copy-catalogue" class="outline-button" type="button" disabled>Gesamte JSON kopieren</button><button id="download-catalogue" class="solid-button" type="button" disabled>projects.json herunterladen</button></div>
+        <p id="export-status" class="editor-status" role="status" aria-live="polite"></p>
+        <details id="full-output-details"><summary>Vollständige Katalogdatei ansehen</summary><label for="catalogue-preview" class="sr-only">Vollständige projects.json</label><textarea id="catalogue-preview" readonly spellcheck="false"></textarea></details>
+        <h3>Datei 2 · Lesbare Textfassung</h3>
+        <p>Die zweisprachige Textfassung enthält ebenfalls alle bisherigen und neuen Einträge, einschließlich Quellen und Bildnachweisen.</p>
+        <div class="editor-actions"><button id="copy-markdown" class="outline-button" type="button" disabled>Gesamte Textfassung kopieren</button><button id="download-markdown" class="solid-button" type="button" disabled>CATALOGUE.md herunterladen</button></div>
+        <p id="markdown-export-status" class="editor-status" role="status" aria-live="polite"></p>
+        <details id="markdown-output-details"><summary>Vollständige Textfassung ansehen</summary><label for="markdown-preview" class="sr-only">Vollständige CATALOGUE.md</label><textarea id="markdown-preview" readonly spellcheck="false"></textarea></details>
+        <h2>Im Archiv speichern</h2>
+        <ol>
+          <li>Alle gewünschten Einträge zum Arbeitskatalog hinzufügen.</li>
+          <li><strong>Datei 1 kopieren</strong>, <a href="https://github.com/AdrianArtacho/max-examples/edit/main/data/projects.json" id="github-edit" target="_blank" rel="noopener noreferrer">data/projects.json auf GitHub öffnen ↗</a>, den vollständigen Inhalt ersetzen und den Commit speichern.</li>
+          <li><strong>Datei 2 kopieren</strong>, <a href="https://github.com/AdrianArtacho/max-examples/edit/main/CATALOGUE.md" id="github-edit-markdown" target="_blank" rel="noopener noreferrer">CATALOGUE.md auf GitHub öffnen ↗</a>, den vollständigen Inhalt ersetzen und auch diesen Commit speichern.</li>
+        </ol>
+        <p>Für beide Änderungen brauchst du Schreibzugriff auf das Repository. Alternativ kannst du beide Dateien herunterladen und gemeinsam in GitHub hochladen: <code>projects.json</code> nach <code>data/</code>, <code>CATALOGUE.md</code> ins Hauptverzeichnis.</p>
+        <p>Falls inzwischen jemand den Katalog geändert hat, die neuen Einträge mit der neuesten Datei zusammenführen, damit nichts verloren geht. Nach dem Commit aktualisiert die eingerichtete GitHub-Pages-Veröffentlichung die Website. Speichere beide Dateien aus demselben Stand des Arbeitskatalogs.</p>
+        <p class="field-help">Ein Export aktualisiert diese Website noch nicht. Lade beide Dateien vor dem Schließen des Tabs herunter. Der Editor benötigt keine Zugangsdaten und keine zusätzliche Software.</p>
+        <noscript><p>Für dieses Formular ist JavaScript erforderlich. Du kannst <a href="https://github.com/AdrianArtacho/max-examples/edit/main/data/projects.json">data/projects.json direkt auf GitHub bearbeiten</a>.</p></noscript>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer wrap"><div><a href="./" class="footer-brand">max examples</a><p>Zusammengestellt für den Unterricht von <a href="https://github.com/AdrianArtacho" target="_blank" rel="noopener noreferrer">Adrián Artacho</a>.</p></div><div><a href="./">Zurück zum Ideenarchiv</a> · <a href="https://github.com/AdrianArtacho/max-examples" target="_blank" rel="noopener noreferrer">GitHub ↗</a><p>Projekte und Materialien gehören ihren jeweiligen Urheber:innen.</p></div></footer>
+</body>
+</html>

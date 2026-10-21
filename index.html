@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ein kuratierter Ideenkatalog für Max/MSP, Jitter, Max for Live und verwandte Werkzeuge. Projekte entdecken, Patches öffnen und eigene Ideen entwickeln.">
+  <meta name="theme-color" content="#173f35">
+  <title>Max Examples — Projekte, Patches, Möglichkeiten</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#catalogue" data-i18n="skip">Zum Katalog</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="./" aria-label="Max Examples — Home"><span class="patch-logo" aria-hidden="true">m<span>↗</span></span><span>max<span class="wordmark-light">examples</span><span class="wordmark-caption" data-i18n="wordmarkCaption">Ein offenes Ideenarchiv</span></span></a>
+    <nav aria-label="Hauptnavigation">
+      <a href="#how" class="quiet-link" data-i18n="howNav">So funktioniert’s</a>
+      <a href="editor.html" class="quiet-link" data-i18n="addNav">Eintrag ergänzen ↗</a>
+      <div class="language-switch" role="group" aria-label="Language / Sprache"><button type="button" data-lang="de" aria-pressed="true">DE</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
+    </nav>
+  </header>
+  <main>
+    <section class="intro wrap" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> MAX / MSP / JITTER / BEYOND</p>
+        <h1 id="page-title" data-i18n="headline">Was möchtest du<br><em>möglich machen?</em></h1>
+        <p class="intro-description" data-i18n="intro">Ein Instrument erfinden. Mit Bewegung komponieren. Klang sichtbar machen. Entdecke Projekte, öffne Patches und finde den Anfang deiner eigenen Idee.</p>
+        <a class="text-arrow" href="#catalogue" data-i18n="explore">Das Archiv entdecken <span aria-hidden="true">↓</span></a>
+      </div>
+      <aside class="idea-panel" aria-label="Projektimpuls">
+        <div class="panel-top"><span data-i18n="ideaLabel">DEIN ERSTES EXPERIMENT</span><span aria-hidden="true">↗</span></div>
+        <p class="idea-heading" data-i18n="ideaHeadline">Ein Input.<br>Eine Regel.<br>Eine Überraschung.</p>
+        <div class="patch-chain" aria-hidden="true"><span>input</span><i></i><span>map</span><i></i><span>output</span></div>
+        <p data-i18n="ideaDescription">Beginne mit einer kleinen Geste: Lass einen Klang auf etwas reagieren. Dann verändere die Regel.</p>
+        <button id="surprise" type="button" class="surprise-button" data-i18n="surprise">Gib mir eine Projektidee <span aria-hidden="true">↗</span></button>
+      </aside>
+    </section>
+
+    <section class="catalogue wrap" id="catalogue" aria-labelledby="catalogue-title">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="browseLabel">ANSCHAUEN · VERSTEHEN · AUSPROBIEREN</p><h2 id="catalogue-title" data-i18n="catalogueTitle">Das Ideenarchiv</h2></div><p class="catalogue-stats" id="stats" aria-live="polite"></p></div>
+      <div class="scope-tabs" role="group" aria-label="Sammlung" id="scope-tabs"></div>
+      <div class="search-row">
+        <div class="search-box"><span aria-hidden="true">⌕</span><label class="sr-only" for="search" data-i18n="searchLabel">Archiv durchsuchen</label><input id="search" type="search" autocomplete="off" placeholder="Suche nach Klang, Bewegung, Video, MIDI …" data-placeholder="searchPlaceholder"><kbd aria-hidden="true">/</kbd></div>
+        <button type="button" id="saved-filter" class="outline-button" aria-pressed="false"><span aria-hidden="true">☆</span> <span data-i18n="saved">Merkliste</span> <span id="saved-count">0</span></button>
+      </div>
+      <div class="topics" id="topics" role="group" aria-label="Thema"></div>
+      <div class="filter-row">
+        <div class="selects">
+          <div><label for="level" class="sr-only" data-i18n="levelLabel">Einstieg</label><select id="level"></select></div>
+          <div><label for="access" class="sr-only" data-i18n="accessLabel">Material</label><select id="access"></select></div>
+          <div><label for="sort" class="sr-only" data-i18n="sortLabel">Sortierung</label><select id="sort"></select></div>
+        </div>
+        <div class="view-actions"><button id="share" type="button" class="plain-button" data-i18n="share">Auswahl teilen ↗</button><button id="print" type="button" class="plain-button" data-i18n="print">Drucken / PDF</button></div>
+      </div>
+      <div class="result-row"><p id="result-count" aria-live="polite" role="status">Das Archiv wird geladen …</p><button id="reset" type="button" class="plain-button" hidden data-i18n="reset">Filter zurücksetzen ×</button></div>
+      <div class="project-grid" id="projects"></div>
+      <div class="empty-state" id="empty" hidden><span aria-hidden="true">↳</span><h3 data-i18n="emptyTitle">Hier ist noch Platz für eine Idee.</h3><p data-i18n="emptyText">Versuche einen anderen Suchbegriff oder setze die Filter zurück.</p><button id="empty-reset" class="outline-button" type="button" data-i18n="resetShort">Alle Einträge anzeigen</button></div>
+      <noscript><p>Dieses Archiv benötigt JavaScript für Suche und Filter. Alle Einträge mit Links findest du auch in <a href="CATALOGUE.md">CATALOGUE.md</a>.</p></noscript>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="wrap how-layout"><div><p class="eyebrow" data-i18n="howLabel">VON DER REFERENZ ZUR EIGENEN IDEE</p><h2 data-i18n="howTitle">Nicht alles auf einmal.<br>Ein guter Anfang reicht.</h2><p data-i18n="howIntro">Die Schwierigkeitsangaben sind eine Orientierung für den Einstieg. Die Projektimpulse sind Vorschläge für den Unterricht, keine Anleitungen der Urheber:innen.</p></div><ol class="steps"><li><span>01</span><div><h3 data-i18n="step1Title">Finde etwas, das dich neugierig macht.</h3><p data-i18n="step1">Ein Video kann inspirieren, auch wenn der Originalpatch nicht veröffentlicht ist. „Patch / Download“ zeigt, wo Material angeboten wird.</p></div></li><li><span>02</span><div><h3 data-i18n="step2Title">Verkleinere die Idee.</h3><p data-i18n="step2">Welche einzelne Beziehung interessiert dich? Zum Beispiel: Je schneller ich mich bewege, desto dichter wird der Klang.</p></div></li><li><span>03</span><div><h3 data-i18n="step3Title">Baue eine erste Version.</h3><p data-i18n="step3">Ein Input, eine Regel und ein hörbares oder sichtbares Ergebnis. Speichere interessante Referenzen in deiner Merkliste.</p></div></li></ol></div>
+    </section>
+    <section class="contribute wrap"><div><h2 data-i18n="contributeTitle">Das Archiv darf wachsen.</h2><p data-i18n="contributeText">Ein gutes Projekt entdeckt? Ergänze eine Referenz und einen kleinen Impuls zum Ausprobieren.</p></div><a class="solid-button" href="editor.html" data-i18n="contributeButton">Eintrag vorbereiten ↗</a></section>
+  </main>
+  <footer class="site-footer wrap"><div><a href="./" class="footer-brand">max examples</a><p><span data-i18n="curatedBy">Zusammengestellt für den Unterricht von</span> <a href="https://github.com/AdrianArtacho" target="_blank" rel="noopener noreferrer">Adrián Artacho</a>.</p></div><div><a href="https://github.com/AdrianArtacho/max-examples" target="_blank" rel="noopener noreferrer">GitHub ↗</a> · <a href="CATALOGUE.md" data-i18n="textVersion">Textfassung</a><p data-i18n="footerNote">Projekte und Materialien gehören ihren jeweiligen Urheber:innen. Links und Voraussetzungen können sich ändern.</p><p class="small" data-i18n="savedNote">Die Merkliste bleibt in diesem Browser. Beim Teilen wird die Auswahl im Link gespeichert.</p></div></footer>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="share-dialog"><form method="dialog"><button class="dialog-close" aria-label="Schließen / Close">×</button></form><h2 data-i18n="shareTitle">Link zur Auswahl</h2><p data-i18n="shareHelp">Diesen Link kopieren und weitergeben:</p><label class="sr-only" for="share-url">URL</label><input id="share-url" readonly><button id="share-copy" type="button" class="solid-button" data-i18n="copy">Link kopieren</button></dialog>
+</body>
+</html>

@@ -1,0 +1,60 @@
+name: Suggest a project / Projekt vorschlagen
+description: Suggest an inspiring project, patch or resource for the catalogue.
+title: "Suggestion: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share a project that students could learn from. A maintainer will check its sources and decide whether to add it. Submitting this form does not publish an entry automatically.
+        
+        Schlage ein Projekt vor, von dem Studierende etwas lernen können. Der Vorschlag wird vor einer Aufnahme in den Katalog geprüft.
+  - type: input
+    id: title
+    attributes:
+      label: Project title / Projekttitel
+      placeholder: Name of the artwork, patch, tool or collection
+    validations:
+      required: true
+  - type: input
+    id: creator
+    attributes:
+      label: Creator / Urheber:in
+      description: Name the artist, developer or team responsible for the original project.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Links & sources / Links & Quellen
+      description: Include the original project page, a demonstration video and a patch or repository when available.
+      placeholder: |
+        Project page:
+        Demo/video:
+        Patch/source code:
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Main theme / Hauptthema
+      options:
+        - Sound & instruments / Klang & Instrumente
+        - Generative music / Generative Musik
+        - Visuals & audiovisual / Visuals & Audiovisuelles
+        - Interaction & sensors / Interaktion & Sensoren
+        - Space & spatial audio / Raum & räumliches Audio
+        - Performance & live electronics / Performance & Live-Elektronik
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Why it belongs here / Warum passt es hierher?
+      description: What can students see, hear, try or build from this example?
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Environment & access / Umgebung & Zugang
+      description: Name the software, extra hardware, paid components or old dependencies. Say when only documentation is available.

@@ -1,0 +1,1289 @@
+{
+  "version": 1,
+  "updated": "2026-10-21",
+  "projects": [
+    {
+      "id": "lumiere",
+      "title": "Lumière",
+      "creator": "Robert Henke",
+      "category": "visual",
+      "kind": "project",
+      "environment": [
+        "Max/MSP",
+        "gen~",
+        "Ableton Live"
+      ],
+      "level": "inspiration",
+      "summary_en": "An audiovisual performance in which laser shapes and electronic sounds become coordinated musical events. Henke built a dedicated control and synthesis system in Max and gen~.",
+      "summary_de": "Eine audiovisuelle Performance, in der Laserformen und elektronische Klänge zu gemeinsamen musikalischen Ereignissen werden. Henke entwickelte dafür eine eigene Steuerungs- und Syntheseumgebung in Max und gen~.",
+      "idea_en": "Make one MIDI note trigger both a sound and a Jitter shape. Give them a shared envelope, then explore independent colours and timbres.",
+      "idea_de": "Lass eine MIDI-Note gleichzeitig einen Klang und eine Jitter-Form auslösen. Beide erhalten eine gemeinsame Hüllkurve; Farbe und Klangfarbe kannst du getrennt variieren.",
+      "access_en": "Performance video and development notes; no public patch linked. The original uses a custom laser setup; explore the idea on a screen.",
+      "access_de": "Performancevideo und Entwicklungsnotizen; kein öffentlicher Patch verlinkt. Das Original verwendet ein spezielles Lasersystem; die Idee lässt sich am Bildschirm erkunden.",
+      "links": [
+        {
+          "label": "Project",
+          "type": "project",
+          "url": "https://roberthenke.com/concerts/lumiere.html"
+        },
+        {
+          "label": "Lumière II — live",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=7cmkZfkuMR8"
+        },
+        {
+          "label": "Development notes",
+          "type": "docs",
+          "url": "https://roberthenke.com/technology/blog.html"
+        }
+      ],
+      "sources": [
+        "https://roberthenke.com/concerts/lumiere.html",
+        "https://roberthenke.com/technology/blog.html",
+        "https://boilerroom.tv/session/mutek-mx-robert-henke-koreless-emmanuel-biard/"
+      ],
+      "verified": "2026-10-21",
+      "thumbnail": {
+        "url": "https://roberthenke.com/files_images/concerts/lumiere/Robert_Henke_Lumiere_III_by_Robert_Henke_circles_1080x1080.jpg",
+        "alt_en": "Overlapping laser circles in Lumière III",
+        "alt_de": "Überlagerte Laserkreise in Lumière III",
+        "credit": "Robert Henke",
+        "sourceUrl": "https://roberthenke.com/concerts/lumiere.html"
+      }
+    },
+    {
+      "id": "beap-modular",
+      "title": "BEAP — a modular synthesizer in Max",
+      "creator": "Matthew Davidson; tutorial by Darwin Grosse / Cycling ’74",
+      "category": "sound",
+      "kind": "tool",
+      "environment": [
+        "Max"
+      ],
+      "level": "beginner",
+      "summary_en": "Connect ready-made oscillators, filters, envelopes and control modules to build a playable synthesizer. The introductory video assembles a first instrument step by step.",
+      "summary_de": "Verbinde fertige Oszillatoren, Filter, Hüllkurven und Steuermodule zu einem spielbaren Synthesizer. Das Einführungsvideo baut Schritt für Schritt ein erstes Instrument auf.",
+      "idea_en": "Build an instrument with just three controls. Decide which changes should happen together when one control moves.",
+      "idea_de": "Baue ein Instrument mit nur drei Reglern. Entscheide, welche Veränderungen beim Bewegen eines Reglers gemeinsam passieren sollen.",
+      "access_en": "BEAP modules are bundled with Max; source and examples are also available on GitHub. The tutorial uses an older Max interface.",
+      "access_de": "BEAP-Module sind in Max enthalten; Quellpatches und Beispiele gibt es auch auf GitHub. Das Tutorial zeigt eine ältere Max-Oberfläche.",
+      "links": [
+        {
+          "label": "BEAP tutorial + video",
+          "type": "video",
+          "url": "https://cycling74.com/tutorials/a-few-minutes-with-beap-tutorial-series"
+        },
+        {
+          "label": "Modules and example patches",
+          "type": "patch",
+          "url": "https://github.com/stretta/BEAP"
+        }
+      ],
+      "sources": [
+        "https://cycling74.com/tutorials/a-few-minutes-with-beap-tutorial-series",
+        "https://github.com/stretta/BEAP",
+        "https://cycling74.com/tutorials/package-authoring-an-introduction"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "migsi-pocket-fig",
+      "title": "MIGSI / Pocket Fig",
+      "creator": "Sarah Belle Reid & Ryan Gaston",
+      "category": "interaction",
+      "kind": "project",
+      "environment": [
+        "Max/MSP",
+        "Arduino",
+        "OSC"
+      ],
+      "level": "advanced",
+      "summary_en": "An augmented trumpet captures valve movement, hand pressure and instrument orientation. In Pocket Fig, those gestures drive stutters and granular transformations of trumpet and voice in Max.",
+      "summary_de": "Eine erweiterte Trompete erfasst Ventilbewegung, Handdruck und Instrumentenausrichtung. In Pocket Fig steuern diese Gesten Stottereffekte und granulare Verwandlungen von Trompete und Stimme in Max.",
+      "idea_en": "Add one sensor or MIDI control to an acoustic instrument. Map it to one transformation, then decide which gestures should leave the acoustic sound untouched.",
+      "idea_de": "Ergänze ein akustisches Instrument um einen Sensor oder MIDI-Regler. Steuere damit eine Klangveränderung und entscheide, welche Gesten den akustischen Klang unverändert lassen sollen.",
+      "access_en": "Open-source hardware project with a design paper and videos. Requires a trumpet and custom electronics; the cited pages do not offer a ready-to-run Max patch download.",
+      "access_de": "Open-Source-Hardwareprojekt mit Fachartikel und Videos. Benötigt eine Trompete und eigene Elektronik; die verlinkten Seiten bieten keinen direkt ausführbaren Max-Patch zum Download.",
+      "links": [
+        {
+          "label": "Project",
+          "type": "project",
+          "url": "https://www.migsitrumpet.com/"
+        },
+        {
+          "label": "MIGSI demonstration",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=tbXgUDQaNv0"
+        },
+        {
+          "label": "Pocket Fig",
+          "type": "project",
+          "url": "https://www.migsitrumpet.com/projects"
+        },
+        {
+          "label": "Design paper",
+          "type": "docs",
+          "url": "https://www.nime.org/proceedings/2016/nime2016_paper0082.pdf"
+        }
+      ],
+      "sources": [
+        "https://www.migsitrumpet.com/",
+        "https://www.migsitrumpet.com/projects",
+        "https://www.sarahbellereid.com/migsi/"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "vizzie",
+      "title": "VIZZIE — an instant video performance rig",
+      "creator": "Cycling ’74; tutorial by Gregory Taylor",
+      "category": "visual",
+      "kind": "tool",
+      "environment": [
+        "Max",
+        "Jitter"
+      ],
+      "level": "beginner",
+      "summary_en": "Video players, effects and control modules connect into a live visual instrument. VIZZIE offers an approachable first encounter with Jitter without starting at the lowest level.",
+      "summary_de": "Videoplayer, Effekte und Steuermodule werden zu einem Instrument für Live-Visuals verbunden. VIZZIE bietet einen zugänglichen Einstieg in Jitter mit fertigen Bausteinen.",
+      "idea_en": "Turn one everyday video clip into a visual score. Map a MIDI knob to colour and another to playback behaviour.",
+      "idea_de": "Verwandle einen alltäglichen Videoclip in eine visuelle Partitur. Steuere die Farbe mit einem MIDI-Regler und das Abspielverhalten mit einem zweiten.",
+      "access_en": "Included with Max; updates are available in Package Manager. The linked introduction is older, so individual module interfaces may differ.",
+      "access_de": "In Max enthalten; Updates gibt es im Package Manager. Die verlinkte Einführung ist älter, einzelne Moduloberflächen können abweichen.",
+      "links": [
+        {
+          "label": "Introduction + video",
+          "type": "video",
+          "url": "https://cycling74.com/tutorials/a-brief-introduction-to-vizzie"
+        },
+        {
+          "label": "VIZZIE package",
+          "type": "patch",
+          "url": "https://cycling74.com/packages/vizzie"
+        },
+        {
+          "label": "Overview",
+          "type": "docs",
+          "url": "https://cycling74.com/articles/introducing-vizzie"
+        }
+      ],
+      "sources": [
+        "https://cycling74.com/packages/vizzie",
+        "https://cycling74.com/tutorials/a-brief-introduction-to-vizzie",
+        "https://cycling74.com/articles/introducing-vizzie"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "flucoma-corpus-explorer",
+      "title": "FluCoMa — 2D Corpus Explorer",
+      "creator": "James Bradbury / FluCoMa",
+      "category": "sound",
+      "kind": "project",
+      "environment": [
+        "Max",
+        "FluCoMa"
+      ],
+      "level": "intermediate",
+      "summary_en": "Slice a recording, analyse the fragments and arrange them as points on a two-dimensional map. Moving through the map becomes a way to discover and play sounds.",
+      "summary_de": "Zerlege eine Aufnahme, analysiere die Fragmente und ordne sie als Punkte auf einer zweidimensionalen Karte an. Die Bewegung durch die Karte wird zum Entdecken und Spielen von Klängen.",
+      "idea_en": "Record twenty sounds from your classroom. Compare a map based on loudness and brightness with the groups you would make by listening.",
+      "idea_de": "Nimm zwanzig Klänge im Unterrichtsraum auf. Vergleiche eine Karte nach Lautheit und Helligkeit mit einer Gruppierung, die du nach Gehör erstellen würdest.",
+      "access_en": "Requires Max and the free FluCoMa package. Tutorial code and corrections are discussed in the linked forum thread; the package also includes examples.",
+      "access_de": "Benötigt Max und das kostenlose FluCoMa-Paket. Tutorialcode und Korrekturen stehen im verlinkten Forum; auch das Paket enthält Beispiele.",
+      "links": [
+        {
+          "label": "Tutorial + videos",
+          "type": "video",
+          "url": "https://learn.flucoma.org/learn/2d-corpus-explorer/"
+        },
+        {
+          "label": "Tutorial patches + corrections",
+          "type": "patch",
+          "url": "https://discourse.flucoma.org/t/creating-a-2d-corpus-explorer-video-tutorial-series/1157"
+        },
+        {
+          "label": "Install FluCoMa",
+          "type": "docs",
+          "url": "https://www.flucoma.org/download/"
+        }
+      ],
+      "sources": [
+        "https://learn.flucoma.org/learn/2d-corpus-explorer/",
+        "https://discourse.flucoma.org/t/creating-a-2d-corpus-explorer-video-tutorial-series/1157",
+        "https://www.flucoma.org/download/"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "forester",
+      "title": "Forester",
+      "creator": "Leafcutter John",
+      "category": "sound",
+      "kind": "tool",
+      "environment": [
+        "Max/MSP"
+      ],
+      "level": "beginner",
+      "summary_en": "A modular sonic playground whose forest-like interface turns movement between nodes into sound transformations. Feed it field recordings, live inputs or stems and explore it as a performance instrument.",
+      "summary_de": "Eine modulare Klangumgebung mit einer waldartigen Oberfläche: Bewegungen zwischen Knoten verändern den Klang. Field Recordings, Live-Eingänge oder Stems werden zum Material eines spielbaren Instruments.",
+      "idea_en": "Place three recordings at different positions in a two-dimensional space. Crossfade between them with the mouse, then make the cursor wander automatically.",
+      "idea_de": "Verteile drei Aufnahmen in einer zweidimensionalen Fläche. Überblende mit der Maus zwischen ihnen und lass den Cursor anschließend selbstständig wandern.",
+      "access_en": "Paid/donation-based download from the creator; runs inside Max, not Max for Live. Check the creator’s current requirements and purchase terms.",
+      "access_de": "Download gegen Bezahlung/Spende beim Künstler; läuft in Max, nicht in Max for Live. Aktuelle Voraussetzungen und Konditionen stehen auf der Projektseite.",
+      "links": [
+        {
+          "label": "Project & download",
+          "type": "patch",
+          "url": "https://leafcutterjohn.com/forester-2022/"
+        },
+        {
+          "label": "Build your first forest",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=mPwkNOkctj8"
+        },
+        {
+          "label": "Artist interview",
+          "type": "docs",
+          "url": "https://cycling74.com/articles/an-interview-with-leafcutter-john"
+        }
+      ],
+      "sources": [
+        "https://leafcutterjohn.com/forester-2022/",
+        "https://cycling74.com/articles/an-interview-with-leafcutter-john"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "skin-music",
+      "title": "Skin Music",
+      "creator": "Lauren Sarah Hayes",
+      "category": "interaction",
+      "kind": "project",
+      "environment": [
+        "Max/MSP",
+        "Arduino"
+      ],
+      "level": "inspiration",
+      "summary_en": "An audio-haptic composition experienced on a chaise longue. Max coordinates sound, vibration motors and tactile transducers, making musical structure something listeners can feel through their bodies.",
+      "summary_de": "Eine audiohaptische Komposition auf einer Liege. Max koordiniert Klang, Vibrationsmotoren und Körperschallwandler: Musikalische Strukturen werden am eigenen Körper spürbar.",
+      "idea_en": "Compose a short rhythm with two outputs: an audible sound and a visual pulse. Compare synchrony, delay and independent patterns before exploring tactile hardware.",
+      "idea_de": "Komponiere einen kurzen Rhythmus mit zwei Ausgaben: hörbarer Klang und sichtbarer Puls. Vergleiche Synchronität, Verzögerung und unabhängige Muster, bevor du haptische Hardware einsetzt.",
+      "access_en": "2012 artwork documented with video and a technical overview. The original requires a custom chair, Arduino and vibration hardware; no patch linked.",
+      "access_de": "Kunstwerk von 2012 mit Video und technischer Übersicht. Das Original benötigt eine spezielle Liege, Arduino und Vibrationshardware; kein Patch verlinkt.",
+      "links": [
+        {
+          "label": "Project",
+          "type": "project",
+          "url": "https://cycling74.com/projects/skin-music-an-audio-haptic-composition"
+        },
+        {
+          "label": "Video",
+          "type": "video",
+          "url": "https://vimeo.com/77170690"
+        }
+      ],
+      "sources": [
+        "https://cycling74.com/projects/skin-music-an-audio-haptic-composition"
+      ],
+      "verified": "2026-10-21",
+      "thumbnail": {
+        "url": "https://1cyjknyddcx62agyb002-c74projects.s3.amazonaws.com/files/2015/12/LSH_SkinMusic1.jpg",
+        "alt_en": "The audio-haptic chair used for Skin Music",
+        "alt_de": "Die audiohaptische Liege von Skin Music",
+        "credit": "Lauren Sarah Hayes — project documentation",
+        "sourceUrl": "https://cycling74.com/projects/skin-music-an-audio-haptic-composition"
+      }
+    },
+    {
+      "id": "bach-cage",
+      "title": "bach + cage — compose with live notation",
+      "creator": "Andrea Agostini and Daniele Ghisi",
+      "category": "generative",
+      "kind": "tool",
+      "environment": [
+        "Max",
+        "bach",
+        "cage"
+      ],
+      "level": "intermediate",
+      "summary_en": "Bring musical notation into a Max patch: generate, transform and display scores while a system runs. The companion cage library supplies higher-level composition tools and tutorials.",
+      "summary_de": "Bringe Notenschrift in einen Max-Patch: Erzeuge, verändere und zeige Partituren, während das System läuft. Die ergänzende cage-Bibliothek bietet größere kompositorische Bausteine und Tutorials.",
+      "idea_en": "Record a short MIDI phrase, then show three transformations as notation. Let a performer choose which version becomes the next phrase.",
+      "idea_de": "Nimm eine kurze MIDI-Phrase auf und zeige drei Varianten als Noten. Eine spielende Person entscheidet, welche Variante zur nächsten Phrase wird.",
+      "access_en": "Free packages for Max, available through Package Manager. Check the package’s platform compatibility; included overview patches lead to help files and tutorials.",
+      "access_de": "Kostenlose Pakete für Max, erhältlich im Package Manager. Plattformkompatibilität prüfen; die enthaltenen Übersichtspatches führen zu Hilfedateien und Tutorials.",
+      "links": [
+        {
+          "label": "Notation capabilities",
+          "type": "project",
+          "url": "https://www.bachproject.net/features/"
+        },
+        {
+          "label": "Install bach / cage",
+          "type": "patch",
+          "url": "https://www.bachproject.net/dl/"
+        },
+        {
+          "label": "cage source + tutorial guidance",
+          "type": "docs",
+          "url": "https://github.com/bachfamily/cage"
+        }
+      ],
+      "sources": [
+        "https://www.bachproject.net/features/",
+        "https://www.bachproject.net/dl/",
+        "https://github.com/bachfamily/cage",
+        "https://www.andreaagostini.eu/software/"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "granulator-iii",
+      "title": "Granulator III",
+      "creator": "Robert Henke with Ableton",
+      "category": "sound",
+      "kind": "project",
+      "environment": [
+        "Max for Live",
+        "Ableton Live"
+      ],
+      "level": "beginner",
+      "summary_en": "A playable granular instrument that transforms tiny sample fragments into evolving textures. It can capture live audio and use MPE gestures to shape individual notes.",
+      "summary_de": "Ein spielbares Granularinstrument verwandelt kleinste Samplefragmente in sich wandelnde Texturen. Es kann Live-Audio aufnehmen und einzelne Töne durch MPE-Gesten gestalten.",
+      "idea_en": "Use one spoken syllable as the only sound source. Create a sustained texture, a rhythmic passage and a recognisable voice from it.",
+      "idea_de": "Verwende eine gesprochene Silbe als einzige Klangquelle. Entwickle daraus eine Liegetextur, eine rhythmische Passage und eine erkennbare Stimme.",
+      "access_en": "A Max for Live device, not a standalone Max patch. Ableton lists Live 12 Standard with Max for Live as the requirement; included with Live 12 Suite. Download requires an account.",
+      "access_de": "Ein Max-for-Live-Gerät, kein eigenständiger Max-Patch. Ableton nennt Live 12 Standard mit Max for Live als Voraussetzung; in Live 12 Suite enthalten. Download mit Benutzerkonto.",
+      "links": [
+        {
+          "label": "Device + audio examples",
+          "type": "project",
+          "url": "https://www.ableton.com/en/packs/granulator-iii/"
+        },
+        {
+          "label": "Download device",
+          "type": "patch",
+          "url": "https://www.ableton.com/en/packs/granulator-iii/"
+        },
+        {
+          "label": "Creator’s guide",
+          "type": "docs",
+          "url": "https://roberthenke.com/technology/granulator3.html"
+        }
+      ],
+      "sources": [
+        "https://www.ableton.com/en/packs/granulator-iii/",
+        "https://roberthenke.com/technology/granulator3.html"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "video-music-machine",
+      "title": "Video Music Machine",
+      "creator": "Amit Segall",
+      "category": "generative",
+      "kind": "project",
+      "environment": [
+        "Max/MSP",
+        "Jitter"
+      ],
+      "level": "inspiration",
+      "summary_en": "A student project that turns video into an 8 × 16 musical step sequencer. Video clips or a live camera generate musical patterns, with internal sound generation and MIDI output.",
+      "summary_de": "Ein Studienprojekt, das Video in einen musikalischen 8 × 16-Step-Sequencer verwandelt. Clips oder eine Livekamera erzeugen musikalische Muster, mit interner Klangerzeugung und MIDI-Ausgabe.",
+      "idea_en": "Read the brightness of a few webcam regions and map it to note velocity. Add thresholds so only bright regions trigger notes.",
+      "idea_de": "Lies die Helligkeit einiger Webcam-Bildbereiche aus und übertrage sie auf die Anschlagsstärke. Mit Schwellenwerten lösen nur helle Bereiche Noten aus.",
+      "access_en": "Demo and creator description; no public patch linked on the project page. A strong example of an achievable student concept.",
+      "access_de": "Demo und Beschreibung des Entwicklers; auf der Projektseite ist kein öffentlicher Patch verlinkt. Ein gutes Beispiel für eine klar umrissene studentische Projektidee.",
+      "links": [
+        {
+          "label": "Project",
+          "type": "project",
+          "url": "https://cycling74.com/projects/video-music-machine"
+        },
+        {
+          "label": "Demo",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=ndsxA_quX_k"
+        }
+      ],
+      "sources": [
+        "https://cycling74.com/projects/video-music-machine"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "voyager",
+      "title": "Voyager",
+      "creator": "George Lewis; Max implementation with Damon Holzborn",
+      "category": "generative",
+      "kind": "project",
+      "environment": [
+        "Max/MSP",
+        "MIDI"
+      ],
+      "level": "inspiration",
+      "summary_en": "An improvising computer partner that can follow a musician, contrast with them or pursue its own behaviour. The long-running project was translated from FORTH into Max, including a Disklavier piano version.",
+      "summary_de": "Ein improvisierender Computerpartner, der Musiker:innen folgen, ihnen widersprechen oder eigene Wege verfolgen kann. Das langjährige Projekt wurde von FORTH nach Max übertragen, unter anderem als Disklavier-Version.",
+      "idea_en": "Build a partner with three states: imitate, contrast and play independently. Let note density or pauses influence state changes.",
+      "idea_de": "Baue einen Partner mit drei Zuständen: imitieren, kontrastieren und selbstständig spielen. Lass Notendichte oder Pausen die Zustandswechsel beeinflussen.",
+      "access_en": "Performance examples and an extensive interview explaining the system. No public patch download linked; the project predates its Max implementation.",
+      "access_de": "Performancebeispiele und ein ausführliches Interview zur Funktionsweise. Kein öffentlicher Patch-Download verlinkt; das Projekt entstand vor seiner Max-Implementierung.",
+      "links": [
+        {
+          "label": "How Voyager works",
+          "type": "project",
+          "url": "https://cycling74.com/articles/an-interview-with-george-lewis-and-damon-holzborn-part-1"
+        },
+        {
+          "label": "Voyager & percussion",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=HaPSvqNQtOI"
+        },
+        {
+          "label": "Technical interview, part 2",
+          "type": "docs",
+          "url": "https://cycling74.com/articles/an-interview-with-george-lewis-and-damon-holzborn-part-2"
+        }
+      ],
+      "sources": [
+        "https://cycling74.com/articles/an-interview-with-george-lewis-and-damon-holzborn-part-1",
+        "https://cycling74.com/articles/an-interview-with-george-lewis-and-damon-holzborn-part-2"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "dada",
+      "title": "dada — playful interfaces for composing",
+      "creator": "Daniele Ghisi / bach family",
+      "category": "generative",
+      "kind": "tool",
+      "environment": [
+        "Max",
+        "bach",
+        "dada"
+      ],
+      "level": "intermediate",
+      "summary_en": "Explore musical material through unusual two-dimensional interfaces inspired by geometry, games, physical models and recreational mathematics. The interface itself can suggest a compositional method.",
+      "summary_de": "Erkunde musikalisches Material mit ungewöhnlichen zweidimensionalen Oberflächen aus Geometrie, Spielen, physikalischen Modellen und mathematischen Experimenten. Die Oberfläche selbst kann eine Kompositionsmethode anregen.",
+      "idea_en": "Choose a geometric rule and turn it into a musical rule. Compare what changes when you draw the form instead of writing notes.",
+      "idea_de": "Wähle eine geometrische Regel und mache daraus eine musikalische Regel. Was verändert sich, wenn du die Form zeichnest, statt Noten zu schreiben?",
+      "access_en": "Free Max library; requires bach. Install compatible versions via Package Manager and start with the included help patches.",
+      "access_de": "Kostenlose Max-Bibliothek; benötigt bach. Kompatible Versionen über den Package Manager installieren und mit den enthaltenen Hilfepatches beginnen.",
+      "links": [
+        {
+          "label": "Project overview",
+          "type": "project",
+          "url": "https://www.bachproject.net/dada/"
+        },
+        {
+          "label": "Install dada",
+          "type": "patch",
+          "url": "https://www.bachproject.net/dl/"
+        },
+        {
+          "label": "Source + help patches",
+          "type": "patch",
+          "url": "https://github.com/bachfamily/dada"
+        }
+      ],
+      "sources": [
+        "https://www.bachproject.net/dada/",
+        "https://www.bachproject.net/dl/",
+        "https://www.tenor-conference.org/proceedings/2018/19_Ghisi_tenor18.pdf"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "ppooll",
+      "title": "ppooll — build your own performance environment",
+      "creator": "Klaus Filip and the ppooll community",
+      "category": "performance",
+      "kind": "tool",
+      "environment": [
+        "Max",
+        "Jitter",
+        "ppooll"
+      ],
+      "level": "intermediate",
+      "summary_en": "A network of interacting audio and visual patches for improvisation and installations. Combine modules into a personal performance setup and extend it with your own patches.",
+      "summary_de": "Ein Netzwerk miteinander verbundener Audio- und Videopatches für Improvisation und Installationen. Kombiniere Module zu einem persönlichen Performance-Setup und ergänze eigene Patches.",
+      "idea_en": "Design a ten-minute improvisation setup using one recorded sound, one transformation and one unpredictable process. Rehearse how you enter and leave each state.",
+      "idea_de": "Entwirf ein Setup für zehn Minuten Improvisation: ein aufgenommener Klang, eine Transformation und ein unvorhersehbarer Prozess. Probe die Übergänge zwischen den Zuständen.",
+      "access_en": "Free source and release downloads. The current README requires Max 9 plus additional packages; dependencies vary with the modules you use.",
+      "access_de": "Quellpatches und Releases sind kostenlos verfügbar. Die aktuelle README verlangt Max 9 und zusätzliche Pakete; Abhängigkeiten richten sich nach den verwendeten Modulen.",
+      "links": [
+        {
+          "label": "Project + installation",
+          "type": "project",
+          "url": "https://github.com/ppooll-dev/ppooll"
+        },
+        {
+          "label": "Download release",
+          "type": "patch",
+          "url": "https://github.com/ppooll-dev/ppooll/releases"
+        },
+        {
+          "label": "Quick-start guide (PDF)",
+          "type": "docs",
+          "url": "https://ppooll.klingt.org/wp-content/uploads/2023/07/ppooll-quickstart.pdf"
+        }
+      ],
+      "sources": [
+        "https://github.com/ppooll-dev/ppooll",
+        "https://github.com/ppooll-dev/ppooll/releases",
+        "https://ppooll.klingt.org/wp-content/uploads/2023/07/ppooll-quickstart.pdf"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "ladys-glove",
+      "title": "lady’s glove",
+      "creator": "Laetitia Sonami",
+      "category": "interaction",
+      "kind": "project",
+      "environment": [
+        "Max/MSP",
+        "Jitter",
+        "MIDI"
+      ],
+      "level": "inspiration",
+      "summary_en": "A sensor-covered glove turns nuanced hand and arm gestures into simultaneous control of sound, and sometimes lights, motors or video. Each composition gives the same gestures different mappings.",
+      "summary_de": "Ein Handschuh voller Sensoren übersetzt feine Hand- und Armbewegungen in die gleichzeitige Steuerung von Klang und teilweise Licht, Motoren oder Video. Jede Komposition ordnet den Gesten andere Funktionen zu.",
+      "idea_en": "Choose one familiar gesture and map it to two musical parameters at once. Compare a direct mapping with one that changes depending on a performance mode.",
+      "idea_de": "Wähle eine vertraute Geste und steuere damit gleichzeitig zwei musikalische Parameter. Vergleiche eine direkte Zuordnung mit einer Zuordnung, die sich je nach Spielmodus verändert.",
+      "access_en": "Historical instrument with artist documentation and archival performances. Custom sensors and mapping software; no public patch linked.",
+      "access_de": "Historisches Instrument mit Dokumentation der Künstlerin und archivierten Performances. Eigene Sensorik und Mapping-Software; kein öffentlicher Patch verlinkt.",
+      "links": [
+        {
+          "label": "Instrument & history",
+          "type": "project",
+          "url": "https://sonami.net/portfolio/items/ladys-glove/"
+        },
+        {
+          "label": "Archival performances",
+          "type": "video",
+          "url": "https://vimeo.com/632314493"
+        }
+      ],
+      "sources": [
+        "https://sonami.net/portfolio/items/ladys-glove/"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "circular-sequencer",
+      "title": "Circular Sequencer",
+      "creator": "Michael Reichmann",
+      "category": "generative",
+      "kind": "project",
+      "environment": [
+        "Max for Live",
+        "Ableton Live"
+      ],
+      "level": "beginner",
+      "summary_en": "Moving agents trace circles, squares and other paths across a note grid. Crossing a tile triggers a MIDI note, turning geometric movement into musical sequences.",
+      "summary_de": "Bewegte Punkte ziehen Kreise, Quadrate und andere Bahnen über ein Notenraster. Beim Überqueren eines Feldes erklingt eine MIDI-Note: Geometrische Bewegung wird zur Sequenz.",
+      "idea_en": "Keep the notes fixed and change only the path and speed. Describe the resulting musical form, then try two independent moving agents.",
+      "idea_de": "Lass die Tonhöhen gleich und verändere nur Bahn und Geschwindigkeit. Beschreibe die entstehende Form und probiere anschließend zwei unabhängig bewegte Punkte.",
+      "access_en": "The .amxd device is available in the repository. Requires Ableton Live with Max for Live; the author documents Max 8.5. Start Live’s transport to move the agents.",
+      "access_de": "Die .amxd-Datei liegt im Repository. Benötigt Ableton Live mit Max for Live; der Autor nennt Max 8.5. Die Punkte bewegen sich bei laufendem Live-Transport.",
+      "links": [
+        {
+          "label": "Project + screenshots",
+          "type": "project",
+          "url": "https://cycling74.com/projects/circular-sequencer"
+        },
+        {
+          "label": "Device + instructions",
+          "type": "patch",
+          "url": "https://github.com/michaelreichmann/Circular_Sequencer"
+        }
+      ],
+      "sources": [
+        "https://cycling74.com/projects/circular-sequencer",
+        "https://github.com/michaelreichmann/Circular_Sequencer"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "sven",
+      "title": "SVEN",
+      "creator": "Amy Alexander and team; Max patch mainly by Wojciech Kosma",
+      "category": "visual",
+      "kind": "project",
+      "environment": [
+        "Max",
+        "Jitter",
+        "Computer vision"
+      ],
+      "level": "inspiration",
+      "summary_en": "A playful surveillance installation that transforms pedestrians into music-video stars. A separate vision system sends body and appearance data to Jitter, which selects and applies video treatments.",
+      "summary_de": "Eine spielerische Überwachungsinstallation verwandelt Passant:innen in Musikvideostars. Ein separates Bildanalysesystem sendet Körper- und Erscheinungsdaten an Jitter, das passende Videoeffekte auswählt.",
+      "idea_en": "Turn a webcam into an imaginary music-video booth: use simple movement detection to switch between three deliberately different visual styles.",
+      "idea_de": "Verwandle die Webcam in eine imaginäre Musikvideokabine: Eine einfache Bewegungserkennung schaltet zwischen drei bewusst unterschiedlichen Bildstilen um.",
+      "access_en": "Historical project with video and creator documentation. The original vision system runs separately from Max; no public patch linked in the cited pages.",
+      "access_de": "Historisches Projekt mit Video und Dokumentation der Künstlerin. Das ursprüngliche Bildanalysesystem läuft getrennt von Max; in den verlinkten Seiten kein öffentlicher Patch.",
+      "links": [
+        {
+          "label": "Artist’s project page",
+          "type": "project",
+          "url": "https://amy-alexander.com/live-performance/sven/"
+        },
+        {
+          "label": "Demo",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=jJK6DGnUj5w"
+        },
+        {
+          "label": "Technical overview",
+          "type": "docs",
+          "url": "https://cycling74.com/projects/sven-surveillance-video-entertainment-network"
+        }
+      ],
+      "sources": [
+        "https://amy-alexander.com/live-performance/sven/",
+        "https://cycling74.com/projects/sven-surveillance-video-entertainment-network"
+      ],
+      "verified": "2026-10-21",
+      "thumbnail": {
+        "url": "https://1cyjknyddcx62agyb002-c74projects.s3.amazonaws.com/files/2015/09/whitvert.jpg",
+        "alt_en": "SVEN surveillance video display",
+        "alt_de": "Videoanzeige der SVEN-Installation",
+        "credit": "SVEN / Amy Alexander and team — project documentation",
+        "sourceUrl": "https://cycling74.com/projects/sven-surveillance-video-entertainment-network"
+      }
+    },
+    {
+      "id": "pamela-z-voci",
+      "title": "Voci / voice and electronics",
+      "creator": "Pamela Z",
+      "category": "performance",
+      "kind": "project",
+      "environment": [
+        "Max/MSP",
+        "MIDI",
+        "Video"
+      ],
+      "level": "inspiration",
+      "summary_en": "Pamela Z’s vocal performance practice combines live processing, samples and gesture controllers. Voci expands this into a multimedia work about the many physical, cultural and musical meanings of voice.",
+      "summary_de": "Pamela Z verbindet Stimme, Livebearbeitung, Samples und Gestencontroller. Voci erweitert diese Praxis zu einem multimedialen Werk über die körperlichen, kulturellen und musikalischen Bedeutungen der Stimme.",
+      "idea_en": "Build a short vocal scene from one spoken sentence: record it, repeat it at different speeds, and let a gesture switch between live voice and memory.",
+      "idea_de": "Entwickle aus einem gesprochenen Satz eine kurze Stimmszene: aufnehmen, in verschiedenen Geschwindigkeiten wiederholen und mit einer Geste zwischen Live-Stimme und Erinnerung wechseln.",
+      "access_en": "Artist documentation and performance excerpts; no public patch linked. The repertoire spans several generations of equipment.",
+      "access_de": "Dokumentation der Künstlerin und Performanceausschnitte; kein öffentlicher Patch verlinkt. Das Repertoire umfasst mehrere Generationen technischer Ausstattung.",
+      "links": [
+        {
+          "label": "Voci",
+          "type": "project",
+          "url": "https://archive.pamelaz.com/voci.html"
+        },
+        {
+          "label": "Voci excerpts",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=PqGD2N1FLGg"
+        },
+        {
+          "label": "More performances",
+          "type": "video",
+          "url": "https://pamelaz.com/video/"
+        },
+        {
+          "label": "Voice & electronics practice",
+          "type": "docs",
+          "url": "https://pamelaz.com/about/bio/"
+        }
+      ],
+      "sources": [
+        "https://archive.pamelaz.com/voci.html",
+        "https://archive.pamelaz.com/repertoire.html",
+        "https://pamelaz.com/video/",
+        "https://pamelaz.com/about/bio/"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "semita",
+      "title": "Semita — music theory as a playable experiment",
+      "creator": "Paul V. Miller",
+      "category": "generative",
+      "kind": "tool",
+      "environment": [
+        "Max",
+        "bach",
+        "cage"
+      ],
+      "level": "beginner",
+      "summary_en": "A teaching patch collection covering Euclidean rhythms, tuning, twelve-tone structures and synthesis. Musical ideas become things you can adjust, hear and inspect.",
+      "summary_de": "Eine Lehrpatch-Sammlung zu euklidischen Rhythmen, Stimmungen, Zwölftonstrukturen und Synthese. Musikalische Ideen werden veränderbar, hörbar und sichtbar.",
+      "idea_en": "Choose one concept from music theory and build a small instrument around it. Could a tuning comparison or a rhythm generator become a piece?",
+      "idea_de": "Wähle ein musiktheoretisches Konzept und baue ein kleines Instrument darum. Könnte aus einem Stimmungsvergleich oder Rhythmusgenerator ein Stück entstehen?",
+      "access_en": "Free source patches. Most require bach/cage; some use extra files included in the repository. Keep the supplied dependencies with the patches.",
+      "access_de": "Kostenlose Quellpatches. Die meisten benötigen bach/cage; einige verwenden mitgelieferte Zusatzdateien. Diese Abhängigkeiten beim Kopieren mitnehmen.",
+      "links": [
+        {
+          "label": "Patches + descriptions",
+          "type": "patch",
+          "url": "https://github.com/lauprellim/semita"
+        },
+        {
+          "label": "Install bach / cage",
+          "type": "docs",
+          "url": "https://www.bachproject.net/dl/"
+        }
+      ],
+      "sources": [
+        "https://github.com/lauprellim/semita",
+        "https://github.com/lauprellim"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "mutable-vr",
+      "title": "Mutable VR",
+      "creator": "Chris Speed Visuals",
+      "category": "spatial",
+      "kind": "project",
+      "environment": [
+        "Max/MSP",
+        "OSC",
+        "VR"
+      ],
+      "level": "inspiration",
+      "summary_en": "A student-built immersive instrument where tracked hands shape synthesis and spatial sound inside virtual reality. OSC connects hand tracking to an eight-channel Max audio system.",
+      "summary_de": "Ein im Studium entwickeltes immersives Instrument: Getrackte Hände formen Synthese und Raumklang in einer virtuellen Umgebung. OSC verbindet das Handtracking mit einem achtkanaligen Max-Audiosystem.",
+      "idea_en": "Begin without VR: use an XY controller to move one sound around a stereo or quadraphonic space, then make height control timbre.",
+      "idea_de": "Beginne ohne VR: Bewege mit einem XY-Regler einen Klang im Stereo- oder Vierkanalraum und lass eine Höhenachse die Klangfarbe steuern.",
+      "access_en": "2019 project documentation and video. Original setup uses Leap Motion, Vive and additional spatial-audio tools; no public patch linked.",
+      "access_de": "Projektdokumentation und Video von 2019. Das Original nutzt Leap Motion, Vive und zusätzliche Raumklangwerkzeuge; kein öffentlicher Patch verlinkt.",
+      "links": [
+        {
+          "label": "Project",
+          "type": "project",
+          "url": "https://cycling74.com/projects/mutable-vr"
+        },
+        {
+          "label": "Demo",
+          "type": "video",
+          "url": "https://vimeo.com/360105385"
+        }
+      ],
+      "sources": [
+        "https://cycling74.com/projects/mutable-vr"
+      ],
+      "verified": "2026-10-21",
+      "thumbnail": {
+        "url": "https://usercontent.cdn.cycling74.com/5a54c5fef10eea8069588b03/2019-10-15T19%3A13%3A41Z/c744.jpg",
+        "alt_en": "A participant using the Mutable VR installation",
+        "alt_de": "Eine Person in der Mutable-VR-Installation",
+        "credit": "Chris Speed Visuals — project documentation",
+        "sourceUrl": "https://cycling74.com/projects/mutable-vr"
+      }
+    },
+    {
+      "id": "der-cryptochron",
+      "title": "Der Cryptochron",
+      "creator": "karl krach",
+      "category": "visual",
+      "kind": "project",
+      "environment": [
+        "Max",
+        "Jitter",
+        "Kinect"
+      ],
+      "level": "inspiration",
+      "summary_en": "An interactive video installation that separates a visitor’s movement from the apparent flow of time in the surroundings. Spatial interaction becomes a way to manipulate recorded time.",
+      "summary_de": "Eine interaktive Videoinstallation trennt die Bewegung der Besucher:innen vom scheinbaren Zeitfluss ihrer Umgebung. Räumliche Interaktion wird zur Möglichkeit, aufgezeichnete Zeit zu verändern.",
+      "idea_en": "Store a short webcam history and let mouse position choose the playback delay. Extend the idea so different image regions reveal different moments.",
+      "idea_de": "Speichere einen kurzen Webcam-Verlauf und wähle die Wiedergabeverzögerung mit der Maus. Erweitere die Idee so, dass verschiedene Bildbereiche unterschiedliche Zeitpunkte zeigen.",
+      "access_en": "2016 installation with demo; no patch linked. Original dependencies include Kinect and external Max objects, so treat it as a concept reference.",
+      "access_de": "Installation von 2016 mit Demo; kein Patch verlinkt. Das Original benötigt Kinect und externe Max-Objekte und dient hier als konzeptionelle Referenz.",
+      "links": [
+        {
+          "label": "Project",
+          "type": "project",
+          "url": "https://cycling74.com/projects/der-cryptochron"
+        },
+        {
+          "label": "Installation demo",
+          "type": "video",
+          "url": "https://vimeo.com/180166029"
+        }
+      ],
+      "sources": [
+        "https://cycling74.com/projects/der-cryptochron"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "automatonism",
+      "title": "Automatonism",
+      "creator": "Johan Eriksson",
+      "category": "generative",
+      "kind": "tool",
+      "environment": [
+        "Pure Data"
+      ],
+      "level": "beginner",
+      "summary_en": "A playable modular synthesizer built from Pure Data patches. Its modules, preset system and parameter mappings invite experiments with rhythms, synthesis and self-running musical structures.",
+      "summary_de": "Ein spielbarer modularer Synthesizer aus Pure-Data-Patches. Module, Presets und Parameterzuordnungen laden zu Experimenten mit Rhythmen, Klängen und selbstständig ablaufenden musikalischen Strukturen ein.",
+      "idea_en": "Connect a sequencer, oscillator and envelope; then let a slow random process change just one parameter. Compare surprise with repetition.",
+      "idea_de": "Verbinde Sequencer, Oszillator und Hüllkurve. Verändere anschließend einen einzigen Parameter langsam per Zufall. Vergleiche Überraschung und Wiederholung.",
+      "access_en": "Free software for Pure Data Vanilla, outside Max. The creator provides the patch collection and downloadable Synth Recipes; this is a longstanding collection, so check the included instructions.",
+      "access_de": "Freie Software für Pure Data Vanilla, außerhalb von Max. Der Entwickler bietet die Patch-Sammlung und herunterladbare Synth Recipes an. Bei dieser älteren Sammlung die beiliegende Anleitung beachten.",
+      "links": [
+        {
+          "label": "Project & download",
+          "type": "patch",
+          "url": "https://www.automatonism.com/the-software"
+        },
+        {
+          "label": "Synth Recipes: videos & patches",
+          "type": "video",
+          "url": "https://www.automatonism.com/synth-recipes"
+        }
+      ],
+      "sources": [
+        "https://www.automatonism.com/the-software",
+        "https://www.automatonism.com/synth-recipes"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "touchdesigner-interactive-particles",
+      "title": "Interactive Particles",
+      "creator": "Bileam Tschepe / elekktronaut",
+      "category": "interaction",
+      "kind": "project",
+      "environment": [
+        "TouchDesigner"
+      ],
+      "level": "intermediate",
+      "summary_en": "A tutorial in which movement drives a cloud of particles. Optical flow and the particlesGPU component turn a camera image into forces and visual behaviour.",
+      "summary_de": "Ein Tutorial, in dem Bewegung eine Partikelwolke steuert. Optical Flow und die Komponente particlesGPU übersetzen ein Kamerabild in Kräfte und visuelles Verhalten.",
+      "idea_en": "Make a visual instrument that responds differently to stillness, a small hand gesture and a large body movement.",
+      "idea_de": "Entwirf ein visuelles Instrument, das auf Stillstand, eine kleine Handgeste und eine große Körperbewegung unterschiedlich reagiert.",
+      "access_en": "Runs in TouchDesigner, not Max. The demonstrated sensor setup uses Kinect; the creator also links a webcam optical-flow approach. Video instructions verified; no free project-file download confirmed.",
+      "access_de": "Läuft in TouchDesigner, nicht in Max. Das gezeigte Sensorsystem nutzt Kinect; der Autor verlinkt auch einen Optical-Flow-Ansatz mit Webcam. Videoanleitung geprüft; kein kostenloser Projektdatei-Download bestätigt.",
+      "links": [
+        {
+          "label": "Tutorial & related examples",
+          "type": "docs",
+          "url": "https://www.elekktronaut.com/tutorials/interactive-particles"
+        },
+        {
+          "label": "Watch the tutorial",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=GDZoOnzLYGo"
+        }
+      ],
+      "sources": [
+        "https://www.elekktronaut.com/tutorials/interactive-particles",
+        "https://derivative.ca/community-post/tutorial/interactive-particles-kinect/63905"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "bela-belle-box",
+      "title": "Belle Box",
+      "creator": "Alex Tkalenko",
+      "category": "interaction",
+      "kind": "project",
+      "environment": [
+        "Bela",
+        "Pure Data",
+        "SuperCollider"
+      ],
+      "level": "inspiration",
+      "summary_en": "A portable instrument-design laboratory with light sensors, knobs and buttons connected to a Bela board. Pure Data and SuperCollider sketches let the maker explore how an instrument should feel before fixing its final form.",
+      "summary_de": "Ein tragbares Labor für den Instrumentenbau mit Lichtsensoren, Reglern und Tastern an einem Bela-Board. Skizzen in Pure Data und SuperCollider erproben das Spielgefühl, bevor die endgültige Form feststeht.",
+      "idea_en": "Design a sound that can be played with light and shadow. First prototype the mapping with a slider, then decide what physical gesture it needs.",
+      "idea_de": "Entwirf einen Klang, der sich mit Licht und Schatten spielen lässt. Erprobe die Zuordnung zunächst mit einem Schieberegler und überlege dann, welche körperliche Geste dazu passt.",
+      "access_en": "Project documentation and embedded demonstration videos. Recreating the physical instrument needs Bela hardware and sensors; a complete downloadable Belle Box patch was not confirmed.",
+      "access_de": "Projektdokumentation mit eingebetteten Demonstrationsvideos. Für den physischen Nachbau braucht es Bela-Hardware und Sensoren; ein vollständiger Belle-Box-Patch zum Download wurde nicht bestätigt.",
+      "links": [
+        {
+          "label": "Project & demonstration videos",
+          "type": "video",
+          "url": "https://blog.bela.io/belle-box-synth-building-lab/"
+        },
+        {
+          "label": "Pure Data on Bela",
+          "type": "docs",
+          "url": "https://learn.bela.io/using-bela/languages/pure-data/"
+        }
+      ],
+      "sources": [
+        "https://blog.bela.io/belle-box-synth-building-lab/",
+        "https://learn.bela.io/using-bela/languages/pure-data/"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "supercollider-sc140",
+      "title": "sc140 — music in 140 characters",
+      "creator": "SuperCollider community",
+      "category": "generative",
+      "kind": "project",
+      "environment": [
+        "SuperCollider"
+      ],
+      "level": "advanced",
+      "summary_en": "An album of musical miniatures, each generated by just 140 characters of SuperCollider code. The recordings and source text reveal how a tiny set of rules can produce surprisingly rich results.",
+      "summary_de": "Ein Album musikalischer Miniaturen, die jeweils aus nur 140 Zeichen SuperCollider-Code entstehen. Aufnahmen und Quelltext zeigen, wie wenige Regeln überraschend vielfältige Ergebnisse hervorbringen können.",
+      "idea_en": "Listen to one miniature and change one number in its code. For a Max variation, impose a limit of five sound-producing or control objects.",
+      "idea_de": "Höre eine Miniatur und verändere eine Zahl im Code. Als Max-Variante: Beschränke dich auf fünf klangerzeugende oder steuernde Objekte.",
+      "access_en": "Audio and source text are archived together. Requires SuperCollider, not Max. This is a historical 2009 collection; individual snippets can have old assumptions or extra dependencies.",
+      "access_de": "Audio und Quelltext sind gemeinsam archiviert. Benötigt SuperCollider, nicht Max. Die Sammlung stammt aus 2009; einzelne Beispiele können ältere Voraussetzungen oder zusätzliche Abhängigkeiten haben.",
+      "links": [
+        {
+          "label": "Listen & download source",
+          "type": "patch",
+          "url": "https://archive.org/details/sc140"
+        },
+        {
+          "label": "Original project announcement",
+          "type": "project",
+          "url": "https://supercollider.github.io/online%20events/2009/10/21/sc140.html"
+        },
+        {
+          "label": "More SuperCollider examples",
+          "type": "docs",
+          "url": "https://supercollider.github.io/examples"
+        }
+      ],
+      "sources": [
+        "https://archive.org/details/sc140",
+        "https://supercollider.github.io/online%20events/2009/10/21/sc140.html",
+        "https://supercollider.github.io/examples"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "sonic-pi-live-loops",
+      "title": "Sonic Pi — Live Loops",
+      "creator": "Sam Aaron & Sonic Pi community",
+      "category": "performance",
+      "kind": "tool",
+      "environment": [
+        "Sonic Pi"
+      ],
+      "level": "beginner",
+      "summary_en": "Write and change a running musical loop as a performance. The official examples gradually combine notes, synthesis, samples and synchronised loops, while the project site presents live performances.",
+      "summary_de": "Eine laufende musikalische Schleife schreiben und während der Aufführung verändern. Die offiziellen Beispiele verbinden schrittweise Töne, Synthese, Samples und synchronisierte Loops; die Projektseite zeigt Liveauftritte.",
+      "idea_en": "Perform a one-minute piece by editing three running loops: rhythm, bass and texture. Translate the same rules into a Max sequencer afterwards.",
+      "idea_de": "Spiele ein einminütiges Stück, indem du drei laufende Loops veränderst: Rhythmus, Bass und Textur. Übertrage dieselben Regeln anschließend auf einen Max-Sequencer.",
+      "access_en": "Free, open-source environment with text-based code, outside Max. The tutorial includes runnable examples; the project offers app and web versions with different input/output capabilities.",
+      "access_de": "Freie, quelloffene Umgebung mit textbasiertem Code, außerhalb von Max. Das Tutorial enthält ausführbare Beispiele; App- und Webversion unterscheiden sich bei Ein- und Ausgabemöglichkeiten.",
+      "links": [
+        {
+          "label": "Live Loops tutorial & code",
+          "type": "patch",
+          "url": "https://sonic-pi.net/tutorial-09.html"
+        },
+        {
+          "label": "Project & performance videos",
+          "type": "video",
+          "url": "https://sonic-pi.net/"
+        }
+      ],
+      "sources": [
+        "https://sonic-pi.net/tutorial-09.html",
+        "https://sonic-pi.net/"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "ossia-recapture",
+      "title": "[re]capture — an installation scored with sensor data",
+      "creator": "Alice Jarry & team, Concordia University",
+      "category": "interaction",
+      "kind": "project",
+      "environment": [
+        "ossia score",
+        "OSC",
+        "Sensors"
+      ],
+      "level": "inspiration",
+      "summary_en": "An installation that connects air-quality measurements to motors, fans, LEDs and projected video. Its detailed ossia score case study shows how mappings and timed sequences can form an artwork's changing behaviour.",
+      "summary_de": "Eine Installation, die Luftqualitätsmessungen mit Motoren, Ventilatoren, LEDs und Video verbindet. Die ausführliche Fallstudie in ossia score zeigt, wie Zuordnungen und zeitliche Abläufe das wechselnde Verhalten eines Kunstwerks gestalten.",
+      "idea_en": "Create three contrasting scenes for one sensor: direct control, a timed response and a threshold-triggered event. Try simulated sensor values before adding hardware.",
+      "idea_de": "Entwirf drei unterschiedliche Szenen für einen Sensor: direkte Steuerung, eine zeitliche Reaktion und ein Ereignis beim Überschreiten einer Schwelle. Beginne mit simulierten Sensorwerten.",
+      "access_en": "A documented artwork and technical case study, not a ready-to-run Max patch. The original uses custom physical hardware; the mapping ideas can be prototyped in software.",
+      "access_de": "Dokumentiertes Kunstwerk und technische Fallstudie, kein direkt ausführbarer Max-Patch. Das Original nutzt eigene Hardware; die Zuordnungsideen lassen sich zunächst in Software erproben.",
+      "links": [
+        {
+          "label": "Project & technical case study",
+          "type": "docs",
+          "url": "https://ossia.io/posts/air-filtration/"
+        },
+        {
+          "label": "ossia project",
+          "type": "project",
+          "url": "https://ossia.io/project.html"
+        }
+      ],
+      "sources": [
+        "https://ossia.io/posts/air-filtration/",
+        "https://ossia.io/project.html"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "plugdata",
+      "title": "plugdata — patch an instrument inside a DAW",
+      "creator": "plugdata contributors",
+      "category": "sound",
+      "kind": "tool",
+      "environment": [
+        "plugdata",
+        "Pure Data"
+      ],
+      "level": "beginner",
+      "summary_en": "A Pure Data-based visual programming environment that also runs as a DAW plug-in. Its community patch store is a place to discover instruments and effects and inspect how patching can become a personal studio tool.",
+      "summary_de": "Eine visuelle Programmierumgebung auf Basis von Pure Data, die auch als DAW-Plug-in läuft. Im Community-Patch-Store lassen sich Instrumente und Effekte entdecken und als Ausgangspunkt für eigene Studiowerkzeuge untersuchen.",
+      "idea_en": "Build a two-control effect: one control changes the sound, the other changes how strongly that transformation follows the incoming volume.",
+      "idea_de": "Baue einen Effekt mit zwei Reglern: Einer verändert den Klang, der andere bestimmt, wie stark diese Veränderung der Eingangslautstärke folgt.",
+      "access_en": "Free, open-source software; standalone use needs no DAW. Runs Pure Data patches, not Max patch files. Check each community patch's terms and dependencies separately.",
+      "access_de": "Freie, quelloffene Software; eigenständige Nutzung braucht keine DAW. Führt Pure-Data-Patches aus, keine Max-Patchdateien. Bedingungen und Abhängigkeiten einzelner Community-Patches gesondert prüfen.",
+      "links": [
+        {
+          "label": "Project & download",
+          "type": "project",
+          "url": "https://plugdata.org/"
+        },
+        {
+          "label": "Community patch store",
+          "type": "patch",
+          "url": "https://plugdata.org/store.html"
+        },
+        {
+          "label": "Guides & tutorials",
+          "type": "docs",
+          "url": "https://plugdata.org/documentation.html"
+        }
+      ],
+      "sources": [
+        "https://plugdata.org/",
+        "https://plugdata.org/store.html",
+        "https://plugdata.org/documentation.html"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "vcv-rack-first-patch",
+      "title": "VCV Rack — from keyboard to modular instrument",
+      "creator": "VCV",
+      "category": "sound",
+      "kind": "tool",
+      "environment": [
+        "VCV Rack"
+      ],
+      "level": "beginner",
+      "summary_en": "The official starter patch connects MIDI, oscillators and audio output in a virtual modular synthesizer. It makes the relationship between pitch, gates, envelopes and modulation tangible before building similar structures in Max.",
+      "summary_de": "Der offizielle Einstiegspatch verbindet MIDI, Oszillatoren und Audioausgabe in einem virtuellen modularen Synthesizer. Tonhöhe, Gates, Hüllkurven und Modulation werden greifbar, bevor man ähnliche Strukturen in Max baut.",
+      "idea_en": "Replace keyboard input with a slow pattern and an independent modulation source. Build a machine that keeps playing but never repeats in exactly the same way.",
+      "idea_de": "Ersetze die Tastatur durch ein langsames Muster und eine unabhängige Modulationsquelle. Baue eine Maschine, die weiterspielt, sich aber nie exakt wiederholt.",
+      "access_en": "Runs in VCV Rack, outside Max; the starter patch comes with the application. Start with included modules. Additional modules and editions have their own availability and terms.",
+      "access_de": "Läuft in VCV Rack, außerhalb von Max; der Einstiegspatch ist in der Anwendung enthalten. Beginne mit den mitgelieferten Modulen. Für Zusatzmodule und Editionen gelten eigene Bedingungen.",
+      "links": [
+        {
+          "label": "Starter patch walkthrough",
+          "type": "docs",
+          "url": "https://vcvrack.com/manual/GettingStarted"
+        },
+        {
+          "label": "Module library",
+          "type": "project",
+          "url": "https://library.vcvrack.com/"
+        }
+      ],
+      "sources": [
+        "https://vcvrack.com/manual/GettingStarted"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "mesh2audio",
+      "title": "mesh2audio — play a 3D shape",
+      "creator": "Karl Hiner & Ben Wilfong",
+      "category": "sound",
+      "kind": "project",
+      "environment": [
+        "Faust",
+        "C++"
+      ],
+      "level": "advanced",
+      "summary_en": "Generate or import a 3D object, turn its shape into a physical sound model, and play it by striking points on the mesh. A vivid bridge between sculpture, acoustics and instrument design.",
+      "summary_de": "Ein 3D-Objekt erzeugen oder importieren, seine Form in ein physikalisches Klangmodell verwandeln und Punkte des Modells anschlagen. Eine anschauliche Verbindung von Skulptur, Akustik und Instrumentenbau.",
+      "idea_en": "Sketch three imaginary resonant objects and predict their sounds. For a smaller Max project, approximate one with a bank of tuned resonators.",
+      "idea_de": "Skizziere drei imaginäre Resonanzkörper und vermute ihre Klänge. Als kleinere Max-Aufgabe lässt sich einer davon mit einer Bank gestimmter Resonatoren annähern.",
+      "access_en": "Open-source C++/Faust application with build instructions and demo video; not a Max patch or a one-click beginner installation. The repository points to continued development separately.",
+      "access_de": "Quelloffene C++/Faust-Anwendung mit Build-Anleitung und Demonstrationsvideo; kein Max-Patch und keine einfache Einstiegsinstallation. Das Repository verweist gesondert auf die Weiterentwicklung.",
+      "links": [
+        {
+          "label": "Source & build instructions",
+          "type": "patch",
+          "url": "https://github.com/khiner/mesh2audio"
+        },
+        {
+          "label": "Watch project demonstration",
+          "type": "video",
+          "url": "https://youtu.be/RwxgOHVBDvc"
+        },
+        {
+          "label": "More projects using Faust",
+          "type": "project",
+          "url": "https://faust.grame.fr/community/powered-by-faust/"
+        }
+      ],
+      "sources": [
+        "https://github.com/khiner/mesh2audio",
+        "https://github.com/GATech-CSE-6730-Spring-2023-Project/mesh2audio",
+        "https://faust.grame.fr/community/powered-by-faust/"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "max-cookbook",
+      "title": "Max Cookbook",
+      "creator": "Christopher Dobrian / University of California, Irvine",
+      "category": "sound",
+      "kind": "resource",
+      "environment": [
+        "Max",
+        "MSP",
+        "Jitter"
+      ],
+      "level": "beginner",
+      "summary_en": "A searchable collection of compact examples with explanations and downloadable patches. Useful when a project idea needs one missing ingredient: MIDI, timing, synthesis or interaction.",
+      "summary_de": "Eine durchsuchbare Sammlung kleiner Beispiele mit Erklärungen und herunterladbaren Patches. Hilfreich, wenn einer Projektidee noch ein Baustein fehlt: MIDI, Timing, Synthese oder Interaktion.",
+      "idea_en": "Choose two recipes that solve different problems and combine them. For example, let a rhythmic process control a synthesis parameter.",
+      "idea_de": "Kombiniere zwei Beispiele, die unterschiedliche Probleme lösen. Lass etwa einen rhythmischen Prozess einen Syntheseparameter steuern.",
+      "access_en": "Public teaching resource. Examples span older Max versions; some historical video objects need adaptation in current Max.",
+      "access_de": "Öffentliches Lehrmaterial. Beispiele stammen aus unterschiedlichen Max-Versionen; manche historischen Videoobjekte müssen für aktuelles Max angepasst werden.",
+      "links": [
+        {
+          "label": "Browse Max Cookbook",
+          "type": "project",
+          "url": "https://music.arts.uci.edu/dobrian/maxcookbook/"
+        },
+        {
+          "label": "Max example collection",
+          "type": "patch",
+          "url": "https://music.arts.uci.edu/dobrian/maxcookbook/chapter/max"
+        },
+        {
+          "label": "FM synthesis examples",
+          "type": "patch",
+          "url": "https://music.arts.uci.edu/dobrian/maxcookbook/keywords/fm"
+        }
+      ],
+      "sources": [
+        "https://music.arts.uci.edu/dobrian/maxcookbook/",
+        "https://music.arts.uci.edu/dobrian/maxcookbook/chapter/max",
+        "https://music.arts.uci.edu/dobrian/maxcookbook/keywords/fm",
+        "https://music.arts.uci.edu/dobrian/maxcookbook/load-movies"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "cycling74-projects",
+      "title": "Cycling ’74 — User Projects",
+      "creator": "Max community / Cycling ’74",
+      "category": "performance",
+      "kind": "resource",
+      "environment": [
+        "Max",
+        "MSP",
+        "Jitter",
+        "Max for Live",
+        "RNBO"
+      ],
+      "level": "inspiration",
+      "summary_en": "An ongoing showcase of projects submitted by Max users: instruments, installations, performances, utilities and unusual interfaces. It is a broad starting point for finding a direction of your own.",
+      "summary_de": "Eine laufende Sammlung von Projekten aus der Max-Community: Instrumente, Installationen, Performances, Werkzeuge und ungewöhnliche Oberflächen. Ein breiter Ausgangspunkt für die eigene Projektidee.",
+      "idea_en": "Choose one project far from your usual musical interests. Identify its input, transformation and output, then propose a smaller version for class.",
+      "idea_de": "Wähle ein Projekt außerhalb deiner üblichen musikalischen Interessen. Bestimme Eingang, Verarbeitung und Ausgang und schlage eine kleinere Version für den Unterricht vor.",
+      "access_en": "Public showcase. Patch downloads and videos depend on the individual entry; a featured project does not automatically include its source code.",
+      "access_de": "Öffentliche Projektschau. Patchdownloads und Videos hängen vom Eintrag ab; eine Vorstellung bedeutet nicht automatisch, dass der Quellcode verfügbar ist.",
+      "links": [
+        {
+          "label": "Browse User Projects",
+          "type": "project",
+          "url": "https://cycling74.com/projects"
+        },
+        {
+          "label": "Tutorials with video / patch filters",
+          "type": "docs",
+          "url": "https://cycling74.com/tutorials"
+        }
+      ],
+      "sources": [
+        "https://cycling74.com/projects",
+        "https://cycling74.com/tutorials?category=beginner"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "maxforlive-library",
+      "title": "MaxforLive.com — Device Library",
+      "creator": "Max for Live community / Cycling ’74",
+      "category": "performance",
+      "kind": "resource",
+      "environment": [
+        "Max for Live",
+        "Ableton Live"
+      ],
+      "level": "beginner",
+      "summary_en": "Browse community-made instruments, audio effects, MIDI effects, generators and transformations. A useful place to discover how a focused musical idea becomes a small, usable tool.",
+      "summary_de": "Entdecke Instrumente, Audioeffekte, MIDI-Effekte, Generatoren und Transformationen aus der Community. Die Sammlung zeigt, wie aus einer konkreten musikalischen Idee ein kleines Werkzeug wird.",
+      "idea_en": "Find three devices that solve the same musical problem. Compare their controls, then sketch the simplest version you would want to build.",
+      "idea_de": "Finde drei Geräte für dieselbe musikalische Aufgabe. Vergleiche ihre Bedienelemente und skizziere die einfachste Version, die du selbst bauen möchtest.",
+      "access_en": "Entries include free and paid devices with different requirements. Check each author’s page; these devices generally require Ableton Live with Max for Live.",
+      "access_de": "Enthält kostenlose und kostenpflichtige Geräte mit unterschiedlichen Voraussetzungen. Angaben der Autor:innen prüfen; normalerweise wird Ableton Live mit Max for Live benötigt.",
+      "links": [
+        {
+          "label": "Browse Device Library",
+          "type": "project",
+          "url": "https://maxforlive.com/library/"
+        }
+      ],
+      "sources": [
+        "https://maxforlive.com/library/"
+      ],
+      "verified": "2026-10-21"
+    },
+    {
+      "id": "patchstorage",
+      "title": "Patchstorage",
+      "creator": "Patchstorage community",
+      "category": "sound",
+      "kind": "resource",
+      "environment": [
+        "Pure Data",
+        "VCV Rack",
+        "Bela",
+        "Other"
+      ],
+      "level": "beginner",
+      "summary_en": "A community repository for patches across audio and visual platforms. Browse by the environment you actually use, compare different approaches to the same idea, and follow creators to more work.",
+      "summary_de": "Ein Community-Verzeichnis für Patches unterschiedlicher Audio- und Visual-Plattformen. Suche nach deiner Umgebung, vergleiche verschiedene Umsetzungen derselben Idee und entdecke weitere Arbeiten der Autor:innen.",
+      "idea_en": "Find two patches with the same goal, such as a drone or sequencer. Describe one design choice you would borrow from each before building your own version.",
+      "idea_de": "Finde zwei Patches mit demselben Ziel, etwa einen Drone oder Sequencer. Beschreibe je eine Gestaltungsidee, die du übernehmen würdest, bevor du deine eigene Version baust.",
+      "access_en": "A discovery directory, not one universal patch format. Host application, modules, hardware and licence vary by entry; use each creator's notes to check what is needed.",
+      "access_de": "Ein Verzeichnis zum Entdecken, kein einheitliches Patchformat. Anwendung, Module, Hardware und Lizenz variieren je Eintrag; prüfe die jeweiligen Hinweise der Autor:innen.",
+      "links": [
+        {
+          "label": "Browse platforms & projects",
+          "type": "project",
+          "url": "https://patchstorage.com/"
+        }
+      ],
+      "sources": [
+        "https://patchstorage.com/"
+      ],
+      "verified": "2026-10-21"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "beap-modular",
+  "title": "BEAP — a modular synthesizer in Max",
+  "creator": "Matthew Davidson; tutorial by Darwin Grosse / Cycling ’74",
+  "category": "sound",
+  "kind": "tool",
+  "environment": [
+    "Max"
+  ],
+  "level": "beginner",
+  "summary_en": "Connect ready-made oscillators, filters, envelopes and control modules to build a playable synthesizer. The introductory video assembles a first instrument step by step.",
+  "summary_de": "Verbinde fertige Oszillatoren, Filter, Hüllkurven und Steuermodule zu einem spielbaren Synthesizer. Das Einführungsvideo baut Schritt für Schritt ein erstes Instrument auf.",
+  "idea_en": "Build an instrument with just three controls. Decide which changes should happen together when one control moves.",
+  "idea_de": "Baue ein Instrument mit nur drei Reglern. Entscheide, welche Veränderungen beim Bewegen eines Reglers gemeinsam passieren sollen.",
+  "access_en": "BEAP modules are bundled with Max; source and examples are also available on GitHub. The tutorial uses an older Max interface.",
+  "access_de": "BEAP-Module sind in Max enthalten; Quellpatches und Beispiele gibt es auch auf GitHub. Das Tutorial zeigt eine ältere Max-Oberfläche.",
+  "links": [
+    {
+      "label": "BEAP tutorial + video",
+      "type": "video",
+      "url": "https://cycling74.com/tutorials/a-few-minutes-with-beap-tutorial-series"
+    },
+    {
+      "label": "Modules and example patches",
+      "type": "patch",
+      "url": "https://github.com/stretta/BEAP"
+    }
+  ],
+  "sources": [
+    "https://cycling74.com/tutorials/a-few-minutes-with-beap-tutorial-series",
+    "https://github.com/stretta/BEAP",
+    "https://cycling74.com/tutorials/package-authoring-an-introduction"
+  ],
+  "verified": "2026-10-21"
+}
