@@ -26,10 +26,12 @@
 
 /* The public page begins with the archive; the entry editor keeps its own layout. */
 .archive-page .catalogue{border:0;padding-top:24px;padding-bottom:38px}
-.archive-topline{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:20px;border-bottom:1px solid var(--line);margin-bottom:18px}
+.archive-topline{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:start;gap:20px;border-bottom:1px solid var(--line);margin-bottom:18px}
 .archive-topline .scope-tabs{border:0;margin:0;gap:25px;flex-wrap:wrap;overflow:visible}
 .archive-topline .scope-tabs button{padding:8px 0 12px}
 .archive-topline .tab-count{background:none;padding:0;min-width:0}
+.archive-topline .email-suggestion{padding:10px 0;color:var(--green);font-size:12px;text-underline-offset:3px}
+.archive-topline .email-suggestion:hover{text-decoration-thickness:2px}
 .archive-topline .language-switch{background:none;border-radius:0;padding:0;gap:2px}
 .archive-topline .language-switch button{padding:8px 7px;background:none;color:var(--muted);border-radius:0;font-weight:500}
 .archive-topline .language-switch button[aria-pressed=true]{color:var(--ink);font-weight:700;text-decoration:underline;text-underline-offset:5px}
@@ -49,9 +51,11 @@
 .archive-page .empty-state h2{font-size:22px;letter-spacing:-.4px}
 @media(max-width:700px){
   .archive-page .catalogue{padding-top:14px}
-  .archive-topline{gap:12px;margin-bottom:14px}
+  .archive-topline{grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;margin-bottom:14px}
   .archive-topline .scope-tabs{gap:0 16px}
   .archive-topline .scope-tabs button{padding:8px 0;font-size:11px}
+  .archive-topline .email-suggestion{grid-column:1/-1;grid-row:2;justify-self:start;padding:4px 0 12px}
+  .archive-topline .language-switch{grid-column:2;grid-row:1}
   .archive-page .view-actions{gap:18px;align-self:flex-start}
   .archive-page .site-footer>div{max-width:none}
 }

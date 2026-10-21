@@ -1,6 +1,6 @@
 export const copy = {
  de:{
-  skip:'Zum Katalog',wordmarkCaption:'Ein offenes Ideenarchiv',howNav:'So funktioniert’s',addNav:'Eintrag ergänzen',
+  skip:'Zum Katalog',wordmarkCaption:'Ein offenes Ideenarchiv',howNav:'So funktioniert’s',addNav:'Eintrag ergänzen',suggestEmail:'Projekt per E-Mail vorschlagen',
   headline:'Was möchtest du<br><em>möglich machen?</em>',intro:'Ein Instrument erfinden. Mit Bewegung komponieren. Klang sichtbar machen. Entdecke Projekte, öffne Patches und finde den Anfang deiner eigenen Idee.',explore:'Das Archiv entdecken <span aria-hidden="true">↓</span>',
   ideaLabel:'DEIN ERSTES EXPERIMENT',ideaHeadline:'Ein Input.<br>Eine Regel.<br>Eine Überraschung.',ideaDescription:'Beginne mit einer kleinen Geste: Lass einen Klang auf etwas reagieren. Dann verändere die Regel.',surprise:'Gib mir eine Projektidee <span aria-hidden="true">↗</span>',
   browseLabel:'ANSCHAUEN · VERSTEHEN · AUSPROBIEREN',catalogueTitle:'Max Examples — Projektarchiv',searchLabel:'Archiv durchsuchen',searchPlaceholder:'Suche nach Klang, Bewegung, Video, MIDI …',saved:'Merkliste',
@@ -19,7 +19,7 @@ export const copy = {
   levels:{all:'Jeder Einstieg',beginner:'Einfacher Einstieg',intermediate:'Mit Vorkenntnissen',advanced:'Vertiefung',inspiration:'Inspiration'},accessOptions:{all:'Alle Materialien',patch:'Patches & Code',video:'Video / Demo'},sortOptions:{curated:'Kuratierte Reihenfolge',title:'Titel A–Z'},kinds:{project:'Projekt',tool:'Werkzeug',resource:'Fundgrube'},linkTypes:{project:'Projekt',video:'Video / Demo',patch:'Patches & Code',docs:'Dokumentation'}
  },
  en:{
-  skip:'Skip to catalogue',wordmarkCaption:'An open archive of ideas',howNav:'How to explore',addNav:'Add a reference',
+  skip:'Skip to catalogue',wordmarkCaption:'An open archive of ideas',howNav:'How to explore',addNav:'Add a reference',suggestEmail:'Suggest a project by email',
   headline:'What would you like<br><em>to make possible?</em>',intro:'Invent an instrument. Compose with movement. Make sound visible. Explore projects, open patches, and find the beginning of your own idea.',explore:'Explore the archive <span aria-hidden="true">↓</span>',
   ideaLabel:'YOUR FIRST EXPERIMENT',ideaHeadline:'One input.<br>One rule.<br>One surprise.',ideaDescription:'Start with a small gesture: make a sound respond to something. Then change the rule.',surprise:'Give me a project idea <span aria-hidden="true">↗</span>',
   browseLabel:'WATCH · UNDERSTAND · EXPERIMENT',catalogueTitle:'Max Examples — Project archive',searchLabel:'Search the archive',searchPlaceholder:'Search for sound, movement, video, MIDI …',saved:'Shortlist',

@@ -67,7 +67,7 @@ The top-level object contains `version`, `updated` and the `projects` array. Upd
 
 Source-check dates record a review of linked documentation. They do not certify that every download was installed, every patch executed, or every older dependency works on current systems. The validator checks structure and URL syntax without making network requests.
 
-For suggestions from students or colleagues, use the repository's **Suggest a project** issue form. Suggestions are reviewed before becoming catalogue entries; no automation publishes them.
+Students and colleagues can use **Suggest a project by email** at the top of the archive to contact [a.artacho@muk.ac.at](mailto:a.artacho@muk.ac.at), or use the repository's **Suggest a project** issue form. Include the project title and a link to its video, patch or documentation. Suggestions are reviewed before becoming catalogue entries; no automation publishes them.
 
 ## Preview locally
 
