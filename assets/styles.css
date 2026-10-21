@@ -43,26 +43,6 @@
 .archive-page .view-actions a{text-decoration:none}
 .archive-page .view-actions a:hover{text-decoration:underline}
 .archive-page .result-row{min-height:40px}
-.archive-page .project-grid{gap:25px 34px}
-.archive-page .project-card{background:none;border:0;border-top:1px solid var(--line);border-radius:0;box-shadow:none;transform:none;transition:none;overflow:visible}
-.archive-page .project-card.highlight{outline:2px solid #87a359;outline-offset:7px}
-.archive-page .card-body{padding:17px 0 0}
-.entry-topline{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:9px}
-.entry-category{font-size:10px;line-height:1.5;color:var(--muted)}
-.archive-page .save-button{display:inline-block;flex-shrink:0;width:auto;height:auto;padding:2px 0;background:none;border:0;border-radius:0;font-size:10px;line-height:1.5;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
-.archive-page .save-button[aria-pressed=true]{color:var(--ink);font-weight:700}
-.archive-page .project-card h2{font-size:21px;letter-spacing:-.5px;line-height:1.3}
-.archive-page .card-creator{font-size:11px;margin-top:4px}
-.archive-page .card-meta{font-size:9px;letter-spacing:0;text-transform:none;font-weight:400;gap:6px;margin:11px 0 0}
-.archive-page .card-meta .level{padding-left:6px}
-.archive-page .card-description{font-size:13px;line-height:1.7;margin:12px 0}
-.archive-page .card-links{gap:6px 14px;margin-bottom:10px}
-.archive-page .resource-link{display:inline;padding:0;border:0;border-radius:0;background:none;color:var(--ink);font-size:11px;line-height:1.8;text-decoration:underline;text-decoration-color:#b3c0ac;text-underline-offset:3px}
-.archive-page .resource-link:hover{background:none;text-decoration-color:var(--ink)}
-.archive-page .card-details{padding:0;border:0}
-.archive-page .card-details summary{padding:8px 0;font-size:11px;font-weight:400;color:var(--muted)}
-.archive-page .card-details summary:after{font-size:12px}
-.archive-page .detail-section h3{font-size:10px;line-height:1.4;letter-spacing:.6px}
 .archive-page .site-footer{font-size:10px;padding-top:20px;padding-bottom:24px}
 .archive-page .site-footer>div{max-width:48%}
 .archive-page .empty-state{border-radius:0;background:none;padding:35px 20px}
@@ -72,15 +52,8 @@
   .archive-topline{gap:12px;margin-bottom:14px}
   .archive-topline .scope-tabs{gap:0 16px}
   .archive-topline .scope-tabs button{padding:8px 0;font-size:11px}
-  .archive-page .project-grid{gap:22px}
   .archive-page .view-actions{gap:18px;align-self:flex-start}
   .archive-page .site-footer>div{max-width:none}
-}
-@media(max-width:480px){
-  .archive-page .project-grid{gap:18px}
-  .archive-page .project-card h2{font-size:22px}
-  .archive-page .card-description{font-size:13px}
-  .archive-page .resource-link{font-size:12px}
 }
 @media print{
   .archive-page .catalogue{padding:0}
@@ -90,7 +63,7 @@
   .archive-page .project-card h2{font-size:15pt}
   .archive-page .card-body{padding:8pt 0 0}
   .archive-page .card-description,.archive-page .detail-section p{font-size:9pt}
-  .archive-page .resource-link,.archive-page .card-creator,.archive-page .entry-category,.archive-page .card-meta{font-size:8pt}
+  .archive-page .resource-link,.archive-page .card-creator,.archive-page .card-meta{font-size:8pt}
   .archive-page .card-details{padding:7pt 0 0}
   .archive-page .detail-section h3{font-size:8pt}
 }

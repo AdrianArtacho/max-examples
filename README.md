@@ -8,7 +8,7 @@ GitHub Pages serves this static site from **`main` → `/ (root)`**. Commits to 
 
 ## Browse with your students
 
-The page opens directly on the archive: compact filters and text entries, with no introductory header or decorative project banners.
+The page opens directly on the archive, with compact filters and illustrated project cards. Each card has a coloured category graphic or a credited project photograph; there is no introductory header.
 
 - Switch between **German and English** explanations.
 - Search by title, creator, environment or the idea you want to explore.

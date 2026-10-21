@@ -8,6 +8,14 @@ const storage = {
   get(key,fallback) { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } },
   set(key,value) { try { localStorage.setItem(key,JSON.stringify(value)); } catch { /* The catalogue also works without persistent storage. */ } }
 };
+const categoryStyle = {
+  sound:{tint:'#e4eccd',accent:'#526b35',icon:'∿',drawing:'<path d="M0 40 C10 40 10 5 20 5 S30 70 40 70 50 5 60 5 70 70 80 70 90 5 100 5 110 70 120 70 130 40 150 40"/>'},
+  generative:{tint:'#ece3d2',accent:'#937343',icon:'⠿',drawing:'<circle cx="75" cy="38" r="32"/><circle cx="75" cy="38" r="21"/><path d="M75 6 V70 M43 38 H107"/><circle cx="98" cy="15" r="4" fill="currentColor"/><circle cx="54" cy="38" r="4" fill="currentColor"/>'},
+  visual:{tint:'#e6dfef',accent:'#7b648e',icon:'◈',drawing:'<path d="M75 4 L135 38 75 72 15 38 Z M75 14 L115 38 75 62 35 38 Z M75 24 L95 38 75 52 55 38 Z"/>'},
+  interaction:{tint:'#dce9e6',accent:'#3c7c70',icon:'⌁',drawing:'<path d="M20 65 L45 10 70 48 95 21 128 58"/><g fill="currentColor"><circle cx="20" cy="65" r="3"/><circle cx="45" cy="10" r="5"/><circle cx="70" cy="48" r="4"/><circle cx="95" cy="21" r="5"/><circle cx="128" cy="58" r="3"/></g>'},
+  spatial:{tint:'#dfe5f0',accent:'#5479a0',icon:'◎',drawing:'<ellipse cx="75" cy="38" rx="58" ry="26"/><ellipse cx="75" cy="38" rx="32" ry="26"/><ellipse cx="75" cy="38" rx="11" ry="26"/><path d="M17 38 H133"/>'},
+  performance:{tint:'#efdfd6',accent:'#a2664a',icon:'↗',drawing:'<path d="M10 60 L35 60 35 22 55 22 55 45 78 45 78 8 99 8 99 55 121 55 121 28 145 28"/>'}
+};
 let data=[], visible=[], toastTimer;
 const savedValue=storage.get('max-examples-saved',[]);
 let saved=new Set(Array.isArray(savedValue)?savedValue.filter((id)=>typeof id==='string'):[]);
@@ -65,15 +73,19 @@ function setLanguage(next) {
   render();
 }
 
-function card(project) {
-  const isSaved=saved.has(project.id);
+function card(project,index) {
+  const style=categoryStyle[project.category], isSaved=saved.has(project.id);
+  const thumbnail=project.thumbnail&&safeUrl(project.thumbnail.url)?project.thumbnail:null;
   const date=new Intl.DateTimeFormat(lang==='de'?'de-AT':'en-GB',{day:'numeric',month:'short',year:'numeric'}).format(new Date(`${project.verified}T12:00:00Z`));
   const links=project.links.filter((link)=>safeUrl(link.url));
-  return `<article class="project-card${state.project===project.id?' highlight':''}" id="project-${esc(project.id)}" aria-labelledby="title-${esc(project.id)}">
-    <div class="card-body">
-      <div class="entry-topline"><p class="entry-category">${copy[lang].categories[project.category]} · ${copy[lang].kinds[project.kind]}</p><button class="save-button" type="button" data-save="${esc(project.id)}" aria-pressed="${isSaved}" aria-label="${esc((isSaved?t('savedEntry')+' — '+t('unsave'):t('save'))+': '+project.title)}">${isSaved?t('savedEntry'):t('saveEntry')}</button></div>
-      <h2 id="title-${esc(project.id)}">${esc(project.title)}</h2><p class="card-creator">${esc(project.creator)}</p><div class="card-meta"><span>${esc(project.environment.join(' / '))}</span><span class="level">${copy[lang].levels[project.level]}</span></div><p class="card-description">${esc(local(project,'summary'))}</p>
-      <div class="card-links">${links.map((link)=>`<a class="resource-link" href="${esc(safeUrl(link.url))}" target="_blank" rel="noopener noreferrer" title="${esc(copy[lang].linkTypes[link.type])}: ${esc(link.label)}">${esc(link[`label_${lang}`]||link.label)}</a>`).join('')}</div>
+  return `<article class="project-card${state.project===project.id?' highlight':''}" id="project-${esc(project.id)}" aria-labelledby="title-${esc(project.id)}" style="--tint:${style.tint};--accent:${style.accent}">
+    <div class="card-banner${thumbnail?' has-photo':''}"><svg class="category-drawing" viewBox="0 0 150 80" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">${style.drawing}</svg>
+      ${thumbnail?`<img class="card-photo" src="${esc(safeUrl(thumbnail.url))}" alt="${esc(thumbnail[`alt_${lang}`]||thumbnail.alt_en||project.title)}" loading="lazy" referrerpolicy="no-referrer"><a class="photo-credit" href="${esc(safeUrl(thumbnail.sourceUrl))}" target="_blank" rel="noopener noreferrer">© ${esc(thumbnail.credit)}</a>`:''}
+      <span class="card-category">${copy[lang].categories[project.category]}</span><span class="card-index" aria-hidden="true">${String(index+1).padStart(2,'0')} / ${copy[lang].kinds[project.kind]}</span>
+      <button class="save-button" type="button" data-save="${esc(project.id)}" aria-pressed="${isSaved}" aria-label="${esc((isSaved?t('unsave'):t('save'))+': '+project.title)}" title="${isSaved?t('unsave'):t('save')}">${isSaved?'★':'☆'}</button>
+    </div>
+    <div class="card-body"><div class="card-meta"><span>${esc(project.environment.join(' / '))}</span><span class="level">${copy[lang].levels[project.level]}</span></div><h2 id="title-${esc(project.id)}">${esc(project.title)}</h2><p class="card-creator">${esc(project.creator)}</p><p class="card-description">${esc(local(project,'summary'))}</p>
+      <div class="card-links">${links.map((link,i)=>`<a class="resource-link${i===0?' primary':''}" href="${esc(safeUrl(link.url))}" target="_blank" rel="noopener noreferrer" title="${esc(copy[lang].linkTypes[link.type])}: ${esc(link.label)}"><span aria-hidden="true">${link.type==='video'?'▷':link.type==='patch'?'↓':link.type==='docs'?'≡':'↗'}</span>${esc(link[`label_${lang}`]||link.label)}</a>`).join('')}</div>
     </div>
     <details class="card-details"${state.project===project.id?' open':''}><summary>${t('details')}</summary><div class="detail-section"><h3>${t('idea')}</h3><p>${esc(local(project,'idea'))}</p></div><div class="detail-section"><h3>${t('access')}</h3><p>${esc(local(project,'access'))}</p></div><div class="detail-section"><h3>${t('sources')}</h3><ul class="source-list">${project.sources.filter(safeUrl).map((url)=>`<li><a href="${esc(safeUrl(url))}" target="_blank" rel="noopener noreferrer">${esc(new URL(url).hostname.replace(/^www\./,''))}${esc(new URL(url).pathname.replace(/\/$/,'').substring(0,75))}</a></li>`).join('')}</ul><p class="source-date">${t('checked')}: ${date}</p></div><div class="card-bottom"><span>${esc(project.id)}</span><a href="${esc(currentUrl({onlyProject:project.id}))}">${t('permalink')}</a></div></details>
   </article>`;
@@ -94,8 +106,9 @@ function render() {
   });
   if(state.sort==='title') visible.sort((a,b)=>a.title.localeCompare(b.title,lang));
   const openIds=new Set($$('.card-details[open]').map((element)=>element.closest('article').id));
-  $('#projects').innerHTML=visible.map(card).join('');
+  $('#projects').innerHTML=visible.map((project)=>card(project,data.indexOf(project))).join('');
   $$('.card-details').forEach((element)=>{if(openIds.has(element.closest('article').id)) element.open=true;});
+  $$('.card-photo').forEach((img)=>img.addEventListener('error',()=>{img.hidden=true;img.parentElement.classList.remove('has-photo');img.parentElement.querySelector('.photo-credit').hidden=true;}));
   $('#result-count').textContent=(state.ids!==null?t('sharedSelection')+' · ':'')+t('results',{visible:visible.length,total:data.length});
   $('#empty').hidden=visible.length>0; $('#empty p').textContent=state.savedOnly?t('emptySaved'):t('emptyText');
   $('#saved-count').textContent=[...saved].filter((id)=>data.some((project)=>project.id===id)).length;
